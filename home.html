@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Beautica Cosmetics</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+	<!-- Top Nav -->
+	<div class="top-nav">
+		<div class="top-nav-left">3 Free Samples with any Purchase</div>
+		<div class="top-nav-right">
+			<ul>
+				<li>Order Online <strong>(1800) 000 BEAUTICA</strong></li>
+				<li>Gift Certificates</li>
+				<li>Sign In</li>
+				<li><img src="https://flagcdn.com/us.svg" alt="US" class="flag"> US Dollar</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="hamburger" onclick="toggleDrawer()">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="search-box">
+			<i class="fas fa-search"></i>
+			<input type="text" placeholder="Search for a product">
+		</div>
+		<div class="logo">
+			<img src="./images/beautic.png" alt="Beautica Logo">
+		</div>
+		<div class="user-area">
+			<div class="login-info">
+				<strong>HI, CUSTOMER</strong>
+				<p><a href="#">Login or Register</a></p>
+			</div>
+			<div class="divider"></div>
+			<div class="icons">
+				<i class="fas fa-heart"></i>
+				<div class="cart-icon">
+					<i class="fas fa-bag-shopping"></i>
+					<span class="badge">0</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Navigation -->
+	<div class="menu">
+		<ul class="nav-menu">
+			<li class="menu-dropdowns">#TREND NOW <span class="badge new">New</span>
+				<div class="dropdowns-items">
+					<img src="https://via.placeholder.com/150" alt="Banner">
+					<ul>
+						<li>Trending 1</li>
+						<li>Trending 2</li>
+						<li>Trending 3</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="menu-dropdowns">MAKEUP <span class="badge hot">Hot</span>
+				<div class="dropdowns-items">
+					<img src="https://via.placeholder.com/150" alt="Banner">
+					<ul>
+						<li>Lipstick</li>
+						<li>Foundation</li>
+						<li>Eyeshadow</li>
+					</ul>
+				</div>
+			</li>
+
+			<li>NAIL</li>
+			<li class="menu-dropdowns">BEAUTY ACCESSORIES
+				<div class="dropdowns-items">
+					<img src="https://via.placeholder.com/150" alt="Banner">
+					<ul>
+						<li>Brushes</li>
+						<li>Sponges</li>
+						<li>Bags</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="menu-dropdowns">DEMO
+				<div class="dropdowns-items">
+					<img src="https://via.placeholder.com/150" alt="Banner">
+					<ul>
+						<li>Demo Page 1</li>
+						<li>Demo Page 2</li>
+					</ul>
+				</div>
+			</li>
+
+
+
+			<li class="menu-dropdowns">PAGES
+				<div class="dropdowns-items">
+					<img src="https://via.placeholder.com/150" alt="Banner">
+					<ul>
+						<li>About Us</li>
+						<li>FAQ</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu-dropdowns">TRY THEME <span class="badge sale">Sale</span>
+
+				<div class="dropdowns-items">
+					<img src="https://via.placeholder.com/150" alt="Banner">
+					<ul>
+						<li>Theme 1</li>
+						<li>Theme 2</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Banner Section -->
+	<div class="banner">
+		<div class="banner-slide active" style="background-image: url('./images/banner.png');">
+			<div class="banner-content">
+				<h1>BEAUTIFULLY<br />BARE COLLECTION</h1>
+				<p>It’s the Lightweight, Natural-Looking Collection You Love</p>
+				<a href="#" class="shop-btn">SHOP NOW</a>
+			</div>
+		</div>
+		<div class="banner-slide" style="background-image: url('./images/banner2.png');">
+			<div class="banner-content">
+				<h1>SUMMER<br />ESSENTIALS</h1>
+				<p>Discover Skin-Friendly Must-Haves</p>
+				<a href="#" class="shop-btn">SHOP NOW</a>
+			</div>
+		</div>
+		<div class="banner-slide" style="background-image: url('./images/banner3.png');">
+			<div class="banner-content">
+				<h1>ALL NEW<br />MAKEUP LAUNCH</h1>
+				<p>Stay Fresh, Stay Flawless</p>
+				<a href="#" class="shop-btn">SHOP NOW</a>
+			</div>
+		</div>
+		<button class="carousel-btn prev">&#10094;</button>
+		<button class="carousel-btn next">&#10095;</button>
+		<div class="carousel-dots">
+			<span class="dot active" onclick="goToSlide(0)"></span>
+			<span class="dot" onclick="goToSlide(1)"></span>
+			<span class="dot" onclick="goToSlide(2)"></span>
+		</div>
+	</div>
+
+
+	<!-- 3 images -->
+	<div class="small-img">
+		<div class="img-box" style="background-image:url('./images/lips.jpg')">
+			<div class="overlay">
+				<div class="img-txt">LIPS</div>
+			</div>
+		</div>
+		<div class="img-box" style="background-image:url('./images/face.jpg')">
+			<div class="overlay">
+				<div class="img-txt">FACE</div>
+			</div>
+		</div>
+		<div class="img-box" style="background-image:url('./images/tools.jpg')">
+			<div class="overlay">
+				<div class="img-txt">TOOLS</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Just Arrived -->
+
+	<div class="arrived">
+
+		<h2>Just Arrived</h2>
+		<p>Magnis de darturien eros laciniados de cosmopolis dinterdum</p>
+
+	</div>
+
+
+	<!-- Product Cards -->
+
+	<div class="product-container">
+		<div class="products">
+			<div class="product-img">
+				<img class="product-img" src="./images/products/product1.png" alt="product-img" />
+				<span class="badge">New</span>
+				<button class="quick-view">QUICK VIEW</button>
+				<span class="wishlist">&#10084;</span>
+			</div>
+			<div class="product-info">
+				<h3 class="brand">TOMMORROW </h3>
+				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
+				<div class="price">$76.00</div>
+				<button class="add-to-cart">ADD TO CART</button>
+			</div>
+		</div>
+		<div class="products">
+			<div class="product-img">
+				<img class="product-img" src="./images/products/product2.png" alt="product-img" />
+				<span class="badge">New</span>
+				<button class="quick-view">QUICK VIEW</button>
+				<span class="wishlist">&#10084;</span>
+			</div>
+			<div class="product-info">
+				<h3 class="brand">TOMMORROW </h3>
+				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
+				<div class="price">$66.00</div>
+				<button class="add-to-cart">ADD TO CART</button>
+			</div>
+		</div>
+
+		<div class="products">
+			<div class="product-img">
+				<img class="product-img" src="./images/products/product3.png" alt="product-img" />
+				<span class="badge">New</span>
+				<button class="quick-view">QUICK VIEW</button>
+				<span class="wishlist">&#10084;</span>
+			</div>
+			<div class="product-info">
+				<h3 class="brand">TOMMORROW </h3>
+				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
+				<div class="price">$46.00</div>
+				<button class="add-to-cart">ADD TO CART</button>
+			</div>
+		</div>
+		<div class="products">
+			<div class="product-img">
+				<img class="product-img" src="./images/products/product4.png" alt="product-img" />
+				<span class="badge">New</span>
+				<button class="quick-view">QUICK VIEW</button>
+				<span class="wishlist">&#10084;</span>
+			</div>
+			<div class="product-info">
+				<h3 class="brand">TOMMORROW </h3>
+				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
+				<div class="price">$56.00</div>
+				<button class="add-to-cart">ADD TO CART</button>
+			</div>
+		</div>
+
+	</div>
+
+<!-- 2nd Product Cards -->
+
+	<div class="two-cards-container">
+	   <div class="2-cards">
+		<div class="2-cards-img">
+			<img class="2-card-img" src"" atl="img" />
+			<h3> #Trend: Milancelos </h3>
+		</div>
+		<div class="2-cards-info">
+			<p>Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia andos tincidunt 				risus de consequat velit. Quisquemos sodales suscipit tortors...</p>
+			<button>Shop Now</button>
+		</div>
+	   </div>
+	</div>
+
+
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
