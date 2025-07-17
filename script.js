@@ -31,7 +31,8 @@ function openSubMenu(menu) {
 }
 
 function closeSubMenu() {
-  document.getElementById('submenu').classList.remove('open');
+  const submenu = document.getElementById('submenu');
+  submenu.classList.remove('open');
 }
 
 
@@ -46,7 +47,6 @@ const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 const banner = document.querySelector('.banner');
 
-// Show a specific slide
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.toggle('active', i === index);
@@ -55,40 +55,33 @@ function showSlide(index) {
   currentSlide = index;
 }
 
-// Next Slide
 function nextSlide() {
   const next = (currentSlide + 1) % slides.length;
   showSlide(next);
 }
 
-// Previous Slide
 function prevSlide() {
   const prev = (currentSlide - 1 + slides.length) % slides.length;
   showSlide(prev);
 }
 
-// Go to specific slide via dot
 function goToSlide(index) {
   showSlide(index);
 }
 
-// Event Listeners
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 dots.forEach((dot, i) => {
   dot.addEventListener('click', () => goToSlide(i));
 });
 
-// Auto-slide every 5 seconds
 let slideInterval = setInterval(nextSlide, 5000);
 
-// Pause auto-slide on hover
 banner.addEventListener('mouseenter', () => clearInterval(slideInterval));
 banner.addEventListener('mouseleave', () => {
   slideInterval = setInterval(nextSlide, 5000);
 });
 
-// Show/hide arrows on hover
 banner.addEventListener('mouseenter', () => {
   nextBtn.style.opacity = '1';
   prevBtn.style.opacity = '1';
@@ -98,15 +91,12 @@ banner.addEventListener('mouseleave', () => {
   prevBtn.style.opacity = '0';
 });
 
-// Initialize
 showSlide(0);
 
 
 // ===================
 // Follow-Carousel Functionality
 // ===================
-
-
 
 const followImgs = document.querySelector(".follow-imgs");
 const followPrev = document.querySelector(".follow-prev");
@@ -137,16 +127,3 @@ followPrev.addEventListener("click", () => {
 
   followImgs.style.transform = `translateX(${followPosition}px)`;
 });
-
-
-
-
-
-
-
-
-
-
-
-
-

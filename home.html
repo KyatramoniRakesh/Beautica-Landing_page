@@ -10,6 +10,33 @@
 </head>
 
 <body>
+
+	<!-- ✅ SIDEBAR DRAWER -->
+	<div id="side-bar">
+		<div class="drawer-header">
+			<h2>Menu</h2>
+			<span onclick="toggleDrawer()">&#x2715;</span>
+		</div>
+		<ul class="drawer-menu">
+			<li onclick="openSubMenu('trend')">Trend</li>
+			<li onclick="openSubMenu('makeup')">Makeup</li>
+			<li onclick="openSubMenu('accessories')">Accessories</li>
+			<li onclick="openSubMenu('demo')">Demo</li>
+			<li onclick="openSubMenu('pages')">Pages</li>
+			<li onclick="openSubMenu('theme')">Theme</li>
+			<li onclick="openSubMenu('fragrance')">Fragrance</li>
+		</ul>
+
+		<!-- Submenu -->
+		<div id="submenu" class="submenu-drawer">
+			<div class="submenu-header">
+				<h3 id="submenu-title">SUBMENU</h3>
+				<span onclick="closeSubMenu()">&#x2715;</span>
+			</div>
+			<ul id="submenu-content" class="submenu-list"></ul>
+		</div>
+	</div>
+
 	<!-- Top Nav -->
 	<div class="top-nav">
 		<div class="top-nav-left">3 Free Samples with any Purchase</div>
@@ -182,8 +209,6 @@
 			</li>
 
 			<li class="menu-dropdowns" id="nav-menu-li">MAKEUP<span class="badge_top hot">Hot</span>
-
-
 				<div class="makeup-mega-wrapper">
 
 					<!-- Left: Category Grid -->
@@ -266,6 +291,7 @@
 						</div>
 					</div>
 				</div>
+			</li>
 
 
 
