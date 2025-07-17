@@ -119,23 +119,23 @@ let followPosition = 0;
 const followMoveBy = 180;
 
 followNext.addEventListener("click", () => {
-    followPosition -= followMoveBy;
+  followPosition -= followMoveBy;
 
-    if (Math.abs(followPosition) >= followMoveBy * totalImages) {
-        followPosition = 0;
-    }
+  if (Math.abs(followPosition) >= followMoveBy * totalImages) {
+    followPosition = 0;
+  }
 
-    followImgs.style.transform = `translateX(${followPosition}px)`;
+  followImgs.style.transform = `translateX(${followPosition}px)`;
 });
 
 followPrev.addEventListener("click", () => {
-    followPosition += followMoveBy;
+  followPosition += followMoveBy;
 
-    if (followPosition > 0) {
-        followPosition = -followMoveBy * (totalImages - 1);
-    }
+  if (followPosition > 0) {
+    followPosition = -followMoveBy * (totalImages - 1);
+  }
 
-    followImgs.style.transform = `translateX(${followPosition}px)`;
+  followImgs.style.transform = `translateX(${followPosition}px)`;
 });
 
 

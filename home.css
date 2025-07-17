@@ -143,9 +143,10 @@ a {
 
 #nav-menu-li:hover,
 #nav-menu-li.active {
-  color: #f33d74; 
+  color: #f33d74;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 #nav-menu-li:hover::after,
 #nav-menu-li.active::after {
   content: "";
@@ -157,6 +158,7 @@ a {
   background-color: #f33d74;
   border-radius: 10px;
 }
+
 .badge_top {
   font-size: 10px;
   font-weight: bold;
@@ -262,7 +264,7 @@ a {
 }
 
 .mega-col {
-  
+
   min-width: 150px;
 }
 
@@ -328,65 +330,132 @@ a {
 
 /* ====== Fragrance ======== */
 
-#mega_columns{
-    padding-left:30px;
-    margin-left:50px;
+.fragrance-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding: 30px;
+  background: #fff;
 }
-.shop-section {
+
+.grid-col h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.grid-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-col ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.grid-bottom {
+  margin-top: 30px;
   display: flex;
-  align-items: flex-start;
   gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-  background: #f9f9f9;
+  justify-content: space-between;
 }
 
 .promo-banner {
-  position: relative;
- display: flex;
- left:0;
+  display: flex;
+  gap: 20px;
 }
 
 .promo-banner img {
   width: 439px;
-  height:160px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 4px;
 }
-
 
 /* ====== MakeUp======== */
 
 
-.top-seller {
-  grid-column: span 1;
-  text-align: center;
+.makeup-mega-wrapper {
+  display: none;
+  position: fixed;
+  top: 148px;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  border-top: 1px solid #eee;
+  padding: 30px 160px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  gap: 30px;
+  justify-content: flex-start;
 }
 
-.top-seller h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+.menu-dropdowns:hover .makeup-mega-wrapper {
+  display: flex;
+}
+
+.makeup-mega-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 60%;
+  flex: 1;
+  text-align: start;
+  line-height: 18px;
+  color: #000000;
+
+}
+
+
+.makeup-deal-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 40%;
+}
+
+.top-seller {
+  text-align: center;
+  flex: 1;
+}
+
+.product-image-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 15px;
+
+}
+
+.product-image-nav img {
+  height: 130px;
+  width: 130px;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
 }
 
 .top-seller-img {
   width: 60px;
   height: auto;
-  margin-bottom: 10px;
-}
-
-.top-seller h5 {
-  font-size: 14px;
-  font-weight: bold;
-  margin: 10px 0 5px;
 }
 
 .desc {
-  font-size: 12px;
+  font-size: 13px;
   color: #555;
-  margin-bottom: 5px;
+  margin: 10px 0;
 }
 
 .price {
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -394,7 +463,7 @@ a {
 .rating {
   font-size: 14px;
   color: #ccc;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .top-seller button {
@@ -403,10 +472,12 @@ a {
   padding: 10px 25px;
   cursor: pointer;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.banner-makeup {
-  grid-column: span 1;
+.top-seller button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .banner-makeup img {
@@ -414,6 +485,174 @@ a {
   height: auto;
   display: block;
 }
+
+#txt {
+  color: black;
+}
+
+/*------ Beauty ------*/
+
+.beauty-mega-columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  width: 100%;
+  flex: 1;
+  text-align: start;
+  line-height: 18px;
+  color: #000000;
+  padding: 0 30px;
+
+}
+
+
+.shipping {
+  grid-column: 1 / -1;
+  background-color: #fef9c3;
+  padding: 15px;
+  text-align: center;
+}
+
+.shipping p {
+  color: #ec217b;
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+/* ------- DEMO --------*/
+
+.demo-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 170px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: none;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px;
+  line-height: 1.5;
+}
+
+/* Show dropdown on hover */
+.menu-dropdowns:hover .demo-menu {
+  display: block;
+}
+
+/* List style reset */
+.demo-main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top-level menu items */
+.demo-main-menu li {
+  padding: 12px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  font-size: 14px;
+  color: #111;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+
+
+/* Submenu container */
+.has-submenu>.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: none;
+  z-index: 999;
+}
+
+/* Show submenu on hover */
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+/* Submenu items */
+.submenu li {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #111;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  transition: background 0.3s ease;
+}
+
+
+
+.has-submenu::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: #ec217b;
+  transition: transform 0.3s ease;
+}
+
+.has-submenu:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+#pages_li {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.demo-main-menu li,
+.submenu li {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+
+/* ======== underline for pages etc =========== */
+
+.demo-main-menu li,
+#pages_li {
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.demo-main-menu li::after,
+#pages_li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 1px;
+  background-color: #ec217b;
+  /* Pink underline */
+  transition: transform 0.3s ease;
+}
+
+.demo-main-menu li:hover::after,
+#pages_li:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+
 /* ======== Menu-dropdowns End =========== */
 
 
