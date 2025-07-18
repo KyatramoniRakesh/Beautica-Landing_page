@@ -2,38 +2,26 @@
 // Mobile Drawer Toggle
 // ===================
 
-function toggleDrawer() {
-  const sidebar = document.getElementById('side-bar');
+function toggleSidebar() {
+  const sidebar = document.getElementById('mobile-sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
   sidebar.classList.toggle('open');
+  overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
+  document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
 }
 
-// Submenu items map for better scalability
-const submenuItems = {
-  trend: ['Trending 1', 'Trending 2', 'Trending 3'],
-  makeup: ['Lipstick', 'Foundation', 'Eyeshadow'],
-  accessories: ['Brushes', 'Sponges', 'Bags'],
-  demo: ['Demo Page 1', 'Demo Page 2'],
-  pages: ['About Us', 'FAQ', 'Contact'],
-  theme: ['Theme 1', 'Theme 2', 'Contact'],
-  fragrance: ['Perfume', 'Body Mist', 'Essential Oils']
-};
+// Optional: Allow closing sidebar with Escape key
+document.addEventListener('keyup', function(e){
+  if(e.key === "Escape"){
+    const sidebar = document.getElementById('mobile-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if(sidebar.classList.contains('open')){
+      toggleSidebar();
+    }
+  }
+});
 
-function openSubMenu(menu) {
-  const submenu = document.getElementById('submenu');
-  const submenuTitle = document.getElementById('submenu-title');
-  const submenuContent = document.getElementById('submenu-content');
 
-  submenu.classList.add('open');
-  submenuTitle.textContent = menu.toUpperCase();
-
-  const items = submenuItems[menu] || [];
-  submenuContent.innerHTML = items.map(item => `<li>${item}</li>`).join('');
-}
-
-function closeSubMenu() {
-  const submenu = document.getElementById('submenu');
-  submenu.classList.remove('open');
-}
 
 
 // ===================
