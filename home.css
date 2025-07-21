@@ -19,10 +19,10 @@ a {
   color: inherit;
 }
 
-/* Top Nav */
+/*===== Top Nav =====*/
 .top-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: black;
   color: white;
   font-size: 14px;
@@ -41,12 +41,11 @@ a {
   margin-right: 5px;
 }
 
-/* Header */
+/*===== Header =====*/
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 10px 35px;
 }
 
@@ -110,7 +109,7 @@ a {
   position: relative;
 }
 
-.cart-icon .badge {
+.badge_top {
   position: absolute;
   top: -8px;
   right: -10px;
@@ -120,6 +119,71 @@ a {
   font-size: 10px;
   padding: 2px 6px;
 }
+
+/*===== Sidebar =====*/
+ .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 280px;
+            height: 100%;
+            background: white;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            transition: left 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        .sidebar.active {
+            left: 0;
+        }
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .sidebar-menu, .sidebar-secondary {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar-menu li, .sidebar-secondary li {
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .badge {
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: white;
+        }
+        .badge.new { background: #00cfff; }
+        .badge.hot { background: orange; }
+        .badge.sale { background: #f25c5c; }
+        .arrow {
+            color: gray;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            font-size: 20px;
+        }
+        .hamburger {
+            cursor: pointer;
+        }
+
+
+
 
 /* Navigation Menu */
 .menu {
@@ -330,39 +394,6 @@ a {
 
 /* ====== Fragrance ======== */
 
-.fragrance-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  padding: 30px;
-  background: #fff;
-}
-
-.grid-col h4 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.grid-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.grid-col ul li {
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #333;
-}
-
-.grid-bottom {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-}
-
 .promo-banner {
   display: flex;
   gap: 20px;
@@ -528,16 +559,14 @@ a {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 170px;
   background: #fff;
   border: 1px solid #e5e5e5;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   display: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
-  padding: 5px;
-  line-height: 1.5;
+
 }
 
 /* Show dropdown on hover */
@@ -621,16 +650,22 @@ a {
 .submenu li {
   position: relative;
   padding-bottom: 4px;
+    padding: 10px;
+  line-height: 1.5;
+  width:240px;
+  height:50px;
 }
 
 
 /* ======== underline for pages etc =========== */
+
 
 .demo-main-menu li,
 #pages_li {
   position: relative;
   padding-bottom: 1px;
 }
+
 
 .demo-main-menu li::after,
 #pages_li::after {
@@ -655,8 +690,15 @@ a {
 
 /* ======== Menu-dropdowns End =========== */
 
-
-
+.limited{
+    background-color: #E7040F;
+    text-align: center;
+    padding: 12px 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
 
 
 

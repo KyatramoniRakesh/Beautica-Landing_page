@@ -12,44 +12,7 @@
 </head>
 
 <body>
-	<!-- Sidebar for Mobile -->
-	<aside id="mobile-sidebar" class="sidebar">
-		<div class="sidebar-header">
-			<span class="logo"><img src="./images/beautic.png" alt="Beautica" /></span>
-			<button class="close-btn" aria-label="Close Sidebar" onclick="toggleSidebar()">&times;</button>
-		</div>
-		<div class="sidebar-nav">
-			<ul>
-				<li><a href="#">#Trend Now</a></li>
-				<li><a href="#">Fragrance</a></li>
-				<li><a href="#">Makeup</a></li>
-				<li><a href="#">Nail</a></li>
-				<li><a href="#">Beauty Accessories</a></li>
-				<li><a href="#">Demo</a></li>
-				<li><a href="#">Pages</a></li>
-				<li><a href="#">Try Theme</a></li>
-			</ul>
-		</div>
-		<div class="sidebar-footer">
-			<div class="sidebar-links">
-				<a href="#">Sign In</a>
-				<a href="#">Wish Lists</a>
-				<a href="#">Gift Certificates</a>
-			</div>
-			<div class="sidebar-social">
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-pinterest-p"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-youtube"></i>
-			</div>
-		</div>
-	</aside>
-
-
-
-
-	<!-- Top Nav -->
+<!-- Top Nav -->
 	<div class="top-nav">
 		<div class="top-nav-left">3 Free Samples with any Purchase</div>
 		<div class="top-nav-right">
@@ -62,35 +25,75 @@
 		</div>
 	</div>
 
-	<!-- Header -->
-	<header class="header">
-		<div class="hamburger" onclick="toggleSidebar()">
-			<i class="fas fa-bars"></i>
-		</div>
-		<div class="search-box">
-			<i class="fas fa-search"></i>
-			<input type="text" placeholder="Search for a product">
-		</div>
-		<div class="logo">
-			<img src="./images/beautic.png" alt="Beautica Logo">
-		</div>
-		<div class="user-area">
-			<div class="login-info">
-				<strong>HI, CUSTOMER</strong>
-				<p><a href="#">Login or Register</a></p>
-			</div>
-			<div class="divider"></div>
-			<div class="icons">
-				<i class="fas fa-heart"></i>
-				<div class="cart-icon">
-					<i class="fas fa-bag-shopping"></i>
-					<span class="badge_top">0</span>
-				</div>
-			</div>
-		</div>
-	</header>
+    <!-- Header -->
+    <header class="header">
+        <div class="hamburger" onclick="openSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for a product">
+        </div>
+        <div class="logo">
+            <img src="./images/beautic.png" alt="Beautica Logo">
+        </div>
+        <div class="user-area">
+            <div class="login-info">
+                <strong>HI, CUSTOMER</strong>
+                <p><a href="#">Login or Register</a></p>
+            </div>
+            <div class="divider"></div>
+            <div class="icons">
+                <i class="fas fa-heart"></i>
+                <div class="cart-icon">
+                    <i class="fas fa-bag-shopping"></i>
+                    <span class="badge_top">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<!-- Navigation -->
+    <!-- Sidebar Structure -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="close-btn" onclick="closeSidebar()">&times;</button>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li>#TREND NOW <span class="badge new">New</span> <span class="arrow">&gt;</span></li>
+            <li>FRAGRANCE <span class="arrow">&gt;</span></li>
+            <li>MAKEUP <span class="badge hot">Hot</span> <span class="arrow">&gt;</span></li>
+            <li>NAIL</li>
+            <li>BEAUTY ACCESSORIES <span class="arrow">&gt;</span></li>
+            <li>DEMO</li>
+            <li>PAGES <span class="arrow">&gt;</span></li>
+            <li>TRY THEME <span class="badge sale">Sale</span> <span class="arrow">&gt;</span></li>
+        </ul>
+
+        <ul class="sidebar-secondary">
+            <li><i class="fas fa-user"></i> Sign In</li>
+            <li><i class="fas fa-heart"></i> Wish Lists</li>
+            <li><i class="fas fa-phone"></i> (1800) 000 BEAUTICA</li>
+            <li><i class="fas fa-gift"></i> Gift Certificates</li>
+            <li><img src="https://flagcdn.com/us.svg" class="flag"> USD <span class="arrow">&gt;</span></li>
+        </ul>
+
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
+    </div>
+
+
+
+<!====== 3rd navbar======= >
+
+<!-- Navigation -->
 	<div class="menu">
 		<ul class="nav-menu">
 			<li class="menu-dropdowns" id="nav-menu-li">#TREND NOW <span class="badge_top new">New</span>
@@ -162,69 +165,69 @@
 
 			<li class="menu-dropdowns" id="nav-menu-li">FRAGRANCE
 				<div class="dropdowns-items mega-menu">
-					<div class="fragrance-grid">
+					<div class="mega-columns">
+    
+    <!-- Top Row: 5 columns -->
+    <div class="mega-col">
+      <h4>COMOS DE MILANO</h4>
+      <ul>
+        <li>Fermentum Loremous</li>
+        <li>Habitasse Molateas</li>
+        <li>Maecenas Commodos</li>
+        <li>Malesuada Sarcus</li>
+      </ul>
+    </div>
 
-						<!-- Top Row: 5 columns -->
-						<div class="grid-col">
-							<h4>COMOS DE MILANO</h4>
-							<ul>
-								<li>Fermentum Loremous</li>
-								<li>Habitasse Molateas</li>
-								<li>Maecenas Commodos</li>
-								<li>Malesuada Sarcus</li>
-							</ul>
-						</div>
+    <div class="mega-col">
+      <h4>LYNN COSMOPOLIS</h4>
+      <ul>
+        <li>Fermentum Loremous</li>
+        <li>Habitasse Molateas</li>
+        <li>Maecenas Commodos</li>
+        <li>Malesuada Sarcus</li>
+      </ul>
+    </div>
 
-						<div class="grid-col">
-							<h4>LYNN COSMOPOLIS</h4>
-							<ul>
-								<li>Fermentum Loremous</li>
-								<li>Habitasse Molateas</li>
-								<li>Maecenas Commodos</li>
-								<li>Malesuada Sarcus</li>
-							</ul>
-						</div>
+    <div class="mega-col">
+      <h4>NOR LOREMIRUS</h4>
+      <ul>
+        <li>Fermentum Loremous</li>
+        <li>Fermentum Loremous</li>
+        <li>Maecenas Commodos</li>
+        <li>Malesuada Sarcus</li>
+      </ul>
+    </div>
 
-						<div class="grid-col">
-							<h4>NOR LOREMIRUS</h4>
-							<ul>
-								<li>Fermentum Loremous</li>
-								<li>Fermentum Loremous</li>
-								<li>Maecenas Commodos</li>
-								<li>Malesuada Sarcus</li>
-							</ul>
-						</div>
+    <div class="mega-col">
+      <h4>ACCESSORIUS</h4>
+      <ul>
+        <li>Fermentum Loremous</li>
+        <li>Habitasse Molateas</li>
+        <li>Maecenas Commodos</li>
+        <li>Malesuada Sarcus</li>
+      </ul>
+    </div>
 
-						<div class="grid-col">
-							<h4>ACCESSORIUS</h4>
-							<ul>
-								<li>Fermentum Loremous</li>
-								<li>Habitasse Molateas</li>
-								<li>Maecenas Commodos</li>
-								<li>Malesuada Sarcus</li>
-							</ul>
-						</div>
+    <div class="mega-col">
+      <h4>SHOP</h4>
+      <ul>
+        <li>Editor's Picks</li>
+        <li>Just Added</li>
+        <li>Most Populars</li>
+        <li>Most Rated</li>
+        <li>Naminos Compolis</li>
+      </ul>
+    </div>
 
-						<div class="grid-col">
-							<h4>SHOP</h4>
-							<ul>
-								<li>Editor's Picks</li>
-								<li>Just Added</li>
-								<li>Most Populars</li>
-								<li>Most Rated</li>
-								<li>Naminos Compolis</li>
-							</ul>
+    <!-- Bottom Row: promo banners and brands -->
+    <div class="grid-bottom" style="grid-column: 1 / -1;">
+      <div class="promo-banner">
+        <img src="./images/megamenu-image-5.jpg" alt="Summer Collection">
+        <img src="./images/megamenu-image-4.jpg" alt="Summer Collection">
+      </div>
+    </div>
+  </div>
 						</div>
-
-						<!-- Bottom Row: promo banners and brands -->
-						<div class="grid-bottom" style="grid-column: 1 / -1;">
-							<div class="promo-banner">
-								<img src="./images/megamenu-image-5.jpg" alt="Summer Collection">
-								<img src="./images/megamenu-image-4.jpg" alt="Summer Collection">
-							</div>
-						</div>
-					</div>
-				</div>
 			</li>
 
 			<li class="menu-dropdowns" id="nav-menu-li">MAKEUP<span class="badge_top hot">Hot</span>
@@ -410,8 +413,8 @@
 			<li class="menu-dropdowns" id="nav-menu-li">PAGES
 				<div class="dropdowns-items demo-menu">
 					<ul class="demo-main-menu">
-						<li id="pages_li">About Us</li>
-						<li id="pages_li">Contact Us</li>
+						<li id="pages_li"><a href="new.html"> About Us</a></li>
+						<li id="pages_li"><a href="contactus.html">Contact Us</a></li>
 						<li id="pages_li">Blog</li>
 						<li id="pages_li">Blog Details</li>
 						<li id="pages_li">Brands</li>
@@ -428,14 +431,19 @@
 						<li id="pages_li">Documentation</li>
 						<li id="pages_li">Get Support</li>
 						<li id="pages_li">Open A Store For Free</li>
-
+						
 					</ul>
 				</div>
 
-
+				
 			</li>
 		</ul>
 	</div>
+
+<div class="limited">
+    <strong>Limited-Time Offers: Mid-Season Sale Up to 70% OFF On Selected Items. 
+    <a href="#" style="color: #fff; text-decoration: underline;">Shop Now</a></strong>
+</div>
 
 	<!-- Banner Section -->
 	<div class="banner">
@@ -879,6 +887,15 @@
 
 
 	<script src="script.js"></script>
+	    <script>
+    function openSidebar() {
+        document.getElementById('sidebar').classList.add('active');
+    }
+
+    function closeSidebar() {
+        document.getElementById('sidebar').classList.remove('active');
+    }
+    </script>
 </body>
 
 </Html>
