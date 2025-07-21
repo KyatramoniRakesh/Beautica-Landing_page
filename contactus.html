@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautica Navbar</title>
     <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="contactus.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
@@ -450,35 +452,65 @@
 
 
 
-<!--------- About Us -------------->
-
-<div class="about-section">
-<div class="about-top">
-	<div><a href="#">Home <i class="fas fa-chevron-right"></i> </a>
-	</div>
-	<div><a href="#">Pages <i class="fas fa-chevron-right"></i></a></div>
-	<div><a href="#">About Us</a></div>
-	
+<!--------- Map -------------->
+ <div class='map'> 
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9050953727!2d78.24323113439742!3d17.412608642828793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1753068887799!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-    <h1>ABOUT US</h1>
-    <p>Have you ever felt bored with your website theme? If you would like to bring your store to a new aspect, please give us a chance to experience with <strong>Beautica - Premium Responsive BigCommerce Theme (Stencil Ready)!</strong></p>
 
-    <p>Do you have a fashion website? We’re sure that since you’re here you have decided to build a fashion website already and let us introduce you our new Bigcommerce Template for Fashion industry - <strong>Beautica</strong></p>
 
-    <p>It’s fashion in <strong>Beautica!</strong> Attractive photos can and will make your site more appealing to visitors. Theme allows you to choose high quality pictures that will look good on desktop screens as well as on mobile devices. The more eye-catching pictures you choose the more chances you have to grab visitors’ attention.</p>
+<!--------- contact us -------------->
 
-    <p>Beside Design, <strong>Beautica</strong> provides you premium features with some great add-ons which added for free such as: <strong>Advanced Mega Menu, Quick Edit Cart, Bundle, Brand Page A-Z, Before You Leave popup...</strong></p>
 
-    <p>So do you want your site visitors to fall in love with your project? We bet you do! Here is a final secret for you: <strong>Buy Beautica</strong></p>
 
-    <p>You can also browse more BigCommerce Themes & BigCommerce Add-ons to meet your requirements!</p>
+
+  <div class="contact">
+    <a href="#">Home</a> &gt;
+    <a href="#">Pages</a> &gt;
+    <span>Contact Us</span>
   </div>
 
+  <div class="contact-container">
+    <h1>CONTACT US</h1>
+    <p>
+      This is an example of how the Contact Us page displays on the theme. You can edit this information in the BigCommerce control panel. 
+      For template related support please be sure to view our 
+      <a href="#">Theme Documentation</a>. If you have other questions, please contact us directly at: 
+      <a href="#" class="highlight">Our Support Portal</a>, we are happy to answer!.
+    </p>
 
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="">
 
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="">
 
+      <label for="email">Email Address<span class="required">*</span></label>
+      <input type="email" id="email" name="email" placeholder="">
 
+      <label for="order">Order Number</label>
+      <input type="text" id="order" name="order" placeholder="">
 
+      <label for="company">Company Name</label>
+      <input type="text" id="company" name="company" placeholder="">
+
+      <label for="rma">RMA Number</label>
+      <input type="text" id="rma" name="rma" placeholder="">
+
+      <label for="comments">Comments/Questions<span class="required">*</span></label>
+      <textarea id="comments" name="comments" rows="6"></textarea>
+
+      <div class="captcha-box">
+        <input type="checkbox" id="captcha">
+        <label for="captcha">I'm not a robot</label>
+        <div class="captcha-image">
+          <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha" width="30">
+        </div>
+      </div>
+
+      <button type="submit">SUBMIT FORM</button>
+    </form>
+  </div>
 
 
 
