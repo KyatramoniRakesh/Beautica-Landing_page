@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+<div class="home_blog">
+    <p>Home <span>&#9656;</span> Blog</p>
+    <h2>BLOG</h2>
+</div>
+
+<div class="blog-sidebar-toggle">
+    <strong>SIDEBAR</strong>
+    <span class="sidebar-toggle" id="sidebarToggle">&#9776;</span>
+</div>
+
+<div class="blog">
+    <div class="blog-side" id="blogSide">
+        <div class="sidebar-header">
+            <strong>Sidebar</strong>
+            <span class="close-sidebar" id="closeSidebar">&times;</span>
+        </div>
+
+        <hr>
+        <h4>From Our Blog</h4>
+        <p><a href="#">Naminos Elementum Disumos Annec Congue Elito</a></p>
+        <p><a href="#">Loremous Cosmopolis</a></p>
+        <hr>
+
+        <div class="best-sellers">
+            <h4>Best Sellers</h4>
+            <div class="cards-container">
+                <button id="prevBtn">&#10094;</button>
+                <div class="cards-slider" id="cards-slider">
+                    <div class="card">
+                        <img src="./images/07__87370.jpg" />
+                        <h4>FRENCH CONNECTION</h4>
+                        <p>(Product 6) Sample - Makeup, Skincare And Perfumes For Sale</p>
+                        <h4>$ 69.00</h4>
+                        <p class="stars">★★★★★</p>
+                        <button class="quick-add">QUICK ADD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/10__34819.jpg" />
+                        <h4>FRENCH CONNECTION</h4>
+                        <p>(Product 6) Sample - Makeup, Skincare And Perfumes For Sale</p>
+                        <h4>$ 69.00</h4>
+                        <p class="stars">★★★★★</p>
+                        <button class="quick-add">QUICK ADD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/02__20762.jpg" />
+                        <h4>FRENCH CONNECTION</h4>
+                        <p>(Product 6) Sample - Makeup, Skincare And Perfumes For Sale</p>
+                        <h4>$ 69.00</h4>
+                        <p class="stars">★★★★★</p>
+                        <button class="quick-add">QUICK ADD</button>
+                    </div>
+                </div>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-container">
+        <h2><a>Naminos Elementum Disumos Annec Congue Elito</a></h2>
+        <p>Posted by ThemeVale on 1st Feb 2023</p>
+
+        <div class="blog-img-container">
+            <img src="./images/blog-2.jpg" />
+            <p>Nullam aliquet vestibulum augue non varius...</p>
+            <h5 class="right-btn"><a href="#">READ MORE..</a></h5>
+        </div>
+
+        <h2><a>Loremous Cosmopolis</a></h2>
+        <p>Posted by ThemeVale on 15th Feb 2014</p>
+        <div class="blog-img-container">
+            <img src="./images/blog-1.jpg" />
+            <p>Nullam aliquet vestibulum augue non varius...</p>
+            <h5 class="right-btn"><a href="#">READ MORE..</a></h5>
+        </div>
+    </div>
+</div>
+
+<script>
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const closeSidebar = document.getElementById('closeSidebar');
+    const sidebar = document.getElementById('blogSide');
+
+    sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.add('active');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+
+    const slider = document.getElementById('cards-slider');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    const cardWidth = 220;
+
+    nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
+	

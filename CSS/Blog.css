@@ -1,0 +1,262 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home_blog {
+    margin: 20px 150px;
+}
+
+p {
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    font-family: Arial;
+    line-height: 1.9;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.home_blog span{
+    color: #ccc;  
+    font-size: 12px;
+}
+/* Blog Layout */
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 10px 60px;
+}
+
+.blog-side {
+    padding: 30px;
+    margin-left: 60px;
+}
+
+.blog-side a, .blog-container h2 a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blog-side a::after, .blog-container h2 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: #E94481;
+    transition: width 0.4s ease;
+}
+
+.blog-side a:hover, .blog-container h2 a:hover {
+    color: #E94481;
+}
+
+.blog-side a:hover::after, .blog-container h2 a:hover::after {
+    width: 100%;
+}
+
+/* Sidebar Toggle */
+
+
+.blog-sidebar-toggle {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 10px;
+    z-index: 1100;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-toggle {
+    font-size: 24px;
+}
+
+/* Sidebar Close */
+
+.sidebar-header{
+   display:none;
+}
+#closeSidebar {
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Best Sellers */
+.best-sellers {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#prevBtn, #nextBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cards-slider {
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    min-width: 200px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.card img {
+    max-width: 120px;
+    height: auto;
+}
+
+.stars {
+    color: red;
+}
+
+.quick-add {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #111;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.quick-add:hover {
+    background-color: #E82B1A;
+}
+
+.card p:hover {
+    color: #E94481;
+    cursor: pointer;
+}
+
+.right-btn {
+    font-size: 12px;
+    color: pink;
+    font-weight: bold;
+}
+
+.right-btn:hover {
+    color: #E94481;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+
+.home_blog {
+    margin: 5px 20px;
+}
+
+    .blog {
+        display: block;
+        margin: 10px 20px;
+    }
+
+    .blog-sidebar-toggle {
+        display: flex;
+    }
+
+    .blog-side {
+ 	position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 70%;  
+        background: #fff;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        margin: 0;  
+        padding: 20px;  
+        box-sizing: border-box;
+    }
+
+    .blog-side.active {
+        left: 0;
+    }
+
+.sidebar-header{
+   display:flex;
+   justify-content: space-between;
+
+}
+
+.blog-container {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .blog-container h2 {
+        font-size: 20px;
+    }
+
+    .blog-container p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .blog-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .blog-container .right-btn {
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .blog-container {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .blog-container h2 {
+        font-size: 18px;
+    }
+
+    .blog-container p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
+

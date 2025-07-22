@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beautica Footer Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FontAwesome CDN for icons (same as your ref) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+</head>
+<body>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="footer-grid">
+    <!-- SHOP -->
+    <div class="footer-column" data-collapsible>
+      <div class="footer-header">
+        <h4>SHOP</h4>
+        <button class="footer-toggle" aria-expanded="false" aria-controls="shop-list" tabindex="0">+</button>
+      </div>
+      <ul id="shop-list">
+        <li>#Trend Now</li>
+        <li>Fragrance</li>
+        <li>Makeup</li>
+        <li>Nail</li>
+        <li>Beauty Accessories</li>
+      </ul>
+    </div>
+    <!-- INFORMATION -->
+    <div class="footer-column" data-collapsible>
+      <div class="footer-header">
+        <h4>INFORMATION</h4>
+        <button class="footer-toggle" aria-expanded="false" aria-controls="info-list" tabindex="0">+</button>
+      </div>
+      <ul id="info-list">
+        <li>About Us</li>
+        <li>Theme FAQs</li>
+        <li>New Collections</li>
+        <li>Best Sellers</li>
+        <li>Manufacturers</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Blog</li>
+        <li>Gift Certificates</li>
+      </ul>
+    </div>
+    <!-- CUSTOMER SERVICE -->
+    <div class="footer-column" data-collapsible>
+      <div class="footer-header">
+        <h4>CUSTOMER SERVICE</h4>
+        <button class="footer-toggle" aria-expanded="false" aria-controls="customer-list" tabindex="0">+</button>
+      </div>
+      <ul id="customer-list">
+        <li>Search Terms</li>
+        <li>Advanced Search</li>
+        <li>Orders and Returns</li>
+        <li>Contact Us</li>
+        <li>RSS</li>
+        <li>Help & FAQs</li>
+        <li>Consultant</li>
+        <li>Store Locations</li>
+      </ul>
+    </div>
+    <!-- NEWSLETTER / SOCIAL -->
+    <div class="footer-column Signup">
+      <h4>NEWSLETTER SIGN UP</h4>
+      <p>Receive our latest updates about our products and promotions.</p>
+      <div class="signup-input">
+        <input type="email" placeholder="enter your email address" />
+        <button class="signup-input-btn">SUBMIT</button>
+      </div>
+      <h4 style="margin-top:30px;">STAY CONNECTED</h4>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f" aria-label="Facebook"></i>
+        <i class="fab fa-x-twitter" aria-label="Twitter"></i>
+        <i class="fab fa-pinterest-p" aria-label="Pinterest"></i>
+        <i class="fab fa-instagram" aria-label="Instagram"></i>
+        <i class="fab fa-youtube" aria-label="YouTube"></i>
+        <i class="fab fa-tiktok" aria-label="TikTok"></i>
+        <i class="fab fa-google-plus-g" aria-label="Google Plus"></i>
+        <i class="fab fa-snapchat-ghost" aria-label="Snapchat"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom Row -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-items">
+      <div class="rights">
+        <p>© 2025 Beautica-Light.<br>All Rights Reserved. Ecommerce Software by BigCommerce.</p>
+        <p>BigCommerce Themes By ThemeVale.Com</p>
+      </div>
+      <div class="footer-bottom-imgs">
+        <img src="images/visa.jpg" alt="Visa" />
+        <img src="images/master.jpg" alt="Mastercard"/>
+        <img src="images/american.jpg" alt="American Express"/>
+        <img src="images/discover.jpg" alt="Discover"/>
+        <img src="images/cirrus.jpg" alt="Cirrus"/>
+        <img src="images/paypal.jpg" alt="PayPal"/>
+        <img src="images/western.jpg" alt="Western Union"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Collapse/expand logic for tablet/mobile (<=1024px)
+function setCollapseState() {
+  var media = window.matchMedia('(max-width: 1024px)');
+  document.querySelectorAll('.footer-column[data-collapsible]').forEach(function(col, i) {
+    var btn = col.querySelector('.footer-toggle');
+    var list = col.querySelector('ul');
+    if (media.matches) {
+      col.classList.remove('expanded');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.textContent = '+';
+      if (i === 0) { // expand 'Shop' by default on mobile/tablet, like screenshot
+        col.classList.add('expanded');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = '−';
+      }
+    } else {
+      col.classList.add('expanded');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.textContent = '';
+    }
+  });
+}
+
+// Toggle on click
+document.querySelectorAll('.footer-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function(e){
+    var col = this.closest('.footer-column');
+    var expanded = this.getAttribute('aria-expanded') === 'true';
+    // Only toggle on mobile/tablet
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      if (expanded) {
+        col.classList.remove('expanded');
+        this.setAttribute('aria-expanded', 'false');
+        this.textContent = '+';
+      } else {
+        col.classList.add('expanded');
+        this.setAttribute('aria-expanded', 'true');
+        this.textContent = '−';
+      }
+    }
+  });
+});
+
+// Keyboard toggle (Enter/Space)
+document.querySelectorAll('.footer-toggle').forEach(function(btn) {
+  btn.addEventListener('keydown', function(ev){
+    if(ev.key === "Enter" || ev.key === " "){
+      ev.preventDefault();
+      btn.click();
+    }
+  });
+});
+
+// Set initial state and update on resize
+window.addEventListener('DOMContentLoaded', setCollapseState);
+window.addEventListener('resize', setCollapseState);
+
+</script>
+</body>
+</html>
