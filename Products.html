@@ -575,7 +575,117 @@
 
 	<!----- end of coco lee ---->
 
-	<hr style="border: 1px solid #ccc;">
+	<hr style="border: 1px solid #ccc;align-items:center; margin: 0 80px;">
+
+	<!----- Frequently Bought Together ---->
+
+
+	<div class="frequently">
+		<h3>Frequently Bought Together</h3>
+		<div class="frequently-container">
+			<div class="frequently-carousel">
+				<button id="fbt-prev" class="fbt-arrow">&#60;</button>
+
+				<div class="fbt-cards">
+					<div class="fbt-card">
+						<img src="./images/02__20762.jpg" alt="product1" />
+						<div class="ftb-txt">
+							<input type="checkbox" class="fbt-checkbox">
+							<p><a href="#">(Product-3) Sample Makeup Skincare And Perfumes for Sale</a></p>
+						</div>
+						<div class="price-txt">
+							<span class="old-price-txt">$69.00</span>
+							<span class="new-price-txt">$69.00</span>
+						</div>
+						<p id="choose-opt"><a href="#">+ Choose Options </a></p>
+
+					</div>
+
+					<div class="plus">+</div>
+
+					<div class="fbt-card">
+						<img src="./images/02__20762.jpg" alt="product1" />
+						<div class="ftb-txt">
+							<input type="checkbox" class="fbt-checkbox">
+							<p><a href="#">(Product-3) Sample Makeup Skincare And Perfumes for Sale</a></p>
+						</div>
+						<div class="price-txt">
+							<span class="old-price-txt">$69.00</span>
+							<span class="new-price-txt">$69.00</span>
+						</div>
+						<p id="choose-opt"><a href="#">+ Choose Options </a></p>
+
+					</div>
+
+					<div class="plus">+</div>
+
+					<div class="fbt-card">
+						<img src="./images/02__20762.jpg" alt="product1" />
+						<div class="ftb-txt">
+							<input type="checkbox" class="fbt-checkbox">
+							<p><a href="#">(Product-3) Sample Makeup Skincare And Perfumes for Sale</a></p>
+						</div>
+						<div class="price-txt">
+							<span class="old-price-txt">$69.00</span>
+							<span class="new-price-txt">$69.00</span>
+						</div>
+						<p id="choose-opt"><a href="#">+ Choose Options </a></p>
+
+					</div>
+
+					<div class="plus">+</div>
+
+					<div class="fbt-card">
+						<img src="./images/02__20762.jpg" alt="product1" />
+						<div class="ftb-txt">
+							<input type="checkbox" class="fbt-checkbox">
+							<p><a href="#">(Product-3) Sample Makeup Skincare And Perfumes for Sale</a></p>
+						</div>
+						<div class="price-txt">
+							<span class="old-price-txt">$69.00</span>
+							<span class="new-price-txt">$69.00</span>
+						</div>
+						<p id="choose-opt"><a href="#">+ Choose Options </a></p>
+
+					</div>
+
+					<div class="plus">+</div>
+
+					<div class="fbt-card">
+						<img src="./images/02__20762.jpg" alt="product1" />
+						<div class="ftb-txt">
+							<input type="checkbox" class="fbt-checkbox">
+							<p><a href="#">(Product-3) Sample Makeup Skincare And Perfumes for Sale</a></p>
+						</div>
+						<div class="price-txt">
+							<span class="old-price-txt">$69.00</span>
+							<span class="new-price-txt">$69.00</span>
+						</div>
+						<p id="choose-opt"><a href="#">+ Choose Options </a></p>
+
+					</div>
+
+				</div>
+
+				<button id="fbt-next" class="fbt-arrow">&#62;</button>
+			</div>
+
+			<div class="add-all-to-cart">
+				<div class="fbt-total-div">
+					<div class="fbt-title-line">
+						<span>Total Price:</span>
+					</div>
+					<div class="fbt-total-amount" id="fbt-total">$367.00</div>
+				</div>
+				<button id="fbt-add-all-cart">ADD ALL TO CART</button>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
 
 
 
@@ -714,6 +824,40 @@
 			}
 
 		});
+
+
+		const prevBtn = document.getElementById('fbt-prev');
+		const nextBtn = document.getElementById('fbt-next');
+		const fbtCards = document.querySelector('.fbt-cards');
+		const checkboxes = document.querySelectorAll('.fbt-checkbox');
+		const totalPriceEl = document.getElementById('fbt-total');
+
+		// Scroll logic
+		prevBtn.addEventListener('click', () => {
+			fbtCards.scrollBy({ left: -240, behavior: 'smooth' });
+		});
+
+		nextBtn.addEventListener('click', () => {
+			fbtCards.scrollBy({ left: 240, behavior: 'smooth' });
+		});
+
+		function updateTotal() {
+			let total = 0;
+			checkboxes.forEach(checkbox => {
+				if (checkbox.checked) {
+					total += 59;
+				}
+			});
+			totalPriceEl.textContent = `$${total.toFixed(2)}`;
+		}
+
+		// Bind updateTotal to checkbox change
+		checkboxes.forEach(checkbox => {
+			checkbox.addEventListener('change', updateTotal);
+		});
+
+		updateTotal();
+
 	</script>
 
 
