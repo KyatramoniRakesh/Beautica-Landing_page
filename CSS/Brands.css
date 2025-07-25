@@ -722,109 +722,55 @@ a {
 }
 
 
-/* ======== FIND A STORE =========== */
+/* ======== BRANDS =========== */
 
-.store-locator-section {
-  padding: 40px 60px;
+.brands-section {
+  margin: 0 120px;
+  padding: 32px 10px;
   font-family: Arial, sans-serif;
-  color: #111;
-  background-color: #fff;
+  align-items: center;
 }
-
-.store-locator-header .breadcrumbs {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.store-locator-header h1 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.store-locator-header h4 {
-  font-size: 18px;
-  margin: 10px;
-}
-
-.store-locator-header .description {
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.store-search-txt{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 12px;
-    margin-top: 10px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-.store-search {
+.brands-nav {
   display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
-  max-width: 900px;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 26px;
 }
-
-#store-search-input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  /* width: 600px; */
-}
-
-.store-search-btn {
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-  border: none;
+.brands-filter {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  color: #222;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 0;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.16s;
 }
-
-.store-search-btn:hover {
-  background-color: #E94481;
+.brands-filter.active,
+.brands-filter:focus {
+  background: #111;
+  color: #fff;
+  outline: none;
 }
-
-/* Layout */
-.store-locator-wrapper {
-  display: flex;
-  gap: 10px;
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 18px 24px;
 }
-
-.store-list {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.brands-group {
+  min-height: 46px;
 }
-
-.store-box {
-  border: 1px solid #eee;
-  padding: 10px;
-  background-color: #fff;
+.brands-letter {
+  font-weight: bold;
+  font-size: 1.13rem;
+  margin-bottom: 8px;
+  color: #111;
 }
-
-.store-box h4 {
-  margin: 0 0 10px 0;
-  font-size: 14px;
-}
-
-.store-box p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.map-wrapper {
-  width: 75%;
-  height: 500px;
-  position: relative;
+.brand-item {
+  font-size: 1.03rem;
+  color: black;
+  margin-bottom: 9px;
 }
 
 
@@ -832,7 +778,7 @@ a {
 
 
 
-/* ======== FIND A STORE END =========== */
+/* ======== BRANDS  END =========== */
 
 
 
@@ -1063,28 +1009,8 @@ a {
         display: block;
     }
 
-      .store-locator-section {
-    padding: 20px;
-  }
-
-  #store-search-input{
-    flex-direction: column;
-  }
-
-  .store-search-btn {
-    width: 100%;
-  }
-
-  .store-box {
-    padding: 15px;
-  }
-
-  .store-box h4 {
-    font-size: 15px;
-  }
-
-  .store-box p {
-    font-size: 13px;
+    .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
@@ -1124,6 +1050,28 @@ a {
         font-size: 13px;
     }
 
+
+    .brands-section {
+    padding: 14px 3vw;
+  }
+  .brands-nav {
+    gap: 1px;
+  }
+  .brands-filter {
+    padding: 5px 9px;
+    font-size: 0.96rem;
+  }
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 7px;
+  }
+  .brands-letter {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  .brand-item {
+    font-size: 0.98rem;
+  }
 
 }
 
@@ -1182,29 +1130,6 @@ a {
         height: auto;
     }
 
-   .store-locator-header h1 {
-    font-size: 22px;
-  }
-
-  .store-locator-header h3 {
-    font-size: 16px;
-  }
-
-  .map-wrapper {
-    height: 300px;
-  }
-
-    .store-locator-wrapper {
-    flex-direction: column;
-  }
-
-  .store-list,
-  .map-wrapper {
-    width: 100%;
-  }
-
-  .map-wrapper {
-    height: 400px;
-  }
+   
 
 }

@@ -1148,16 +1148,13 @@
 			tabData.forEach(d => {
 				d.classList.remove('active', 'mobile-active');
 				if (isMobile()) {
-					// Move back content to .tab-content on mobile
 					document.querySelector('.tab-content').appendChild(d);
 				}
 			});
 		}
 
-		// Initial setup
 		window.addEventListener('DOMContentLoaded', () => {
 			if (isMobile()) {
-				// Remove all active classes on mobile
 				resetTabs();
 			}
 		});
@@ -1170,7 +1167,7 @@
 				if (isMobile()) {
 					const isActive = btn.classList.contains('active');
 
-					resetTabs(); // Close all
+					resetTabs(); 
 
 					if (!isActive) {
 						btn.classList.add('active');
@@ -1179,7 +1176,7 @@
 					}
 
 				} else {
-					resetTabs(); // Close all
+					resetTabs();
 
 					btn.classList.add('active');
 					content.classList.add('active');
@@ -1187,11 +1184,9 @@
 			});
 		});
 
-		// Optional: On window resize, reapply layout
 		window.addEventListener('resize', () => {
 			resetTabs();
 			if (!isMobile()) {
-				// Default to "Description" tab open on desktop
 				const firstBtn = tabButtons[0];
 				const firstContent = document.getElementById(firstBtn.getAttribute('data-tab'));
 				firstBtn.classList.add('active');
@@ -1200,12 +1195,11 @@
 		});
 
 
-		// DESCRIPTION BUTTON
 
 		function expandDescription(btn) {
 			const desc = document.getElementById("description");
 			desc.classList.add("expanded");
-			btn.style.display = "none"; // hide the button after expanding
+			btn.style.display = "none"; 
 		}
 
 

@@ -722,109 +722,60 @@ a {
 }
 
 
-/* ======== FIND A STORE =========== */
+/* ======== SHIPPING =========== */
 
-.store-locator-section {
-  padding: 40px 60px;
+
+.shipping-returns-container {
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.06);
   font-family: Arial, sans-serif;
-  color: #111;
-  background-color: #fff;
+  color: #222;
+  line-height: 1.7;
 }
 
-.store-locator-header .breadcrumbs {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 10px;
+.breadcrumb {
+  font-size: 0.96rem;
+  color: #a3a3a3;
+  margin-bottom: 22px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
 }
 
-.store-locator-header h1 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.store-locator-header h4 {
+.main-title {
   font-size: 18px;
-  margin: 10px;
-}
-
-.store-locator-header .description {
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.store-search-txt{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 12px;
-    margin-top: 10px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-.store-search {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
-  max-width: 900px;
-}
-
-#store-search-input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  /* width: 600px; */
-}
-
-.store-search-btn {
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
   font-weight: bold;
-  border: none;
-  cursor: pointer;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  color: #111;
 }
 
-.store-search-btn:hover {
-  background-color: #E94481;
-}
-
-/* Layout */
-.store-locator-wrapper {
-  display: flex;
-  gap: 10px;
-}
-
-.store-list {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.store-box {
-  border: 1px solid #eee;
-  padding: 10px;
-  background-color: #fff;
-}
-
-.store-box h4 {
-  margin: 0 0 10px 0;
-  font-size: 14px;
-}
-
-.store-box p {
-  margin: 0;
+.edit-note {
   font-size: 12px;
-  line-height: 1.5;
+  color: #444;
+  margin-bottom: 24px;
 }
 
-.map-wrapper {
-  width: 75%;
-  height: 500px;
-  position: relative;
+.section-title {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 9px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+p {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+a {
+  color: #2063b4;
+  text-decoration: underline;
 }
 
 
@@ -832,7 +783,7 @@ a {
 
 
 
-/* ======== FIND A STORE END =========== */
+/* ======== SHIPPING END =========== */
 
 
 
@@ -1024,14 +975,16 @@ a {
         margin-left: 0;
         padding-left: 5px;
     }
+
     .store-search-txt,
-    #store-search-input{
+    #store-search-input {
         display: block;
     }
-    #nav-searchbar-store{
+
+    #nav-searchbar-store {
         display: none;
     }
-    
+
 
     .login-info,
     .divider,
@@ -1063,28 +1016,29 @@ a {
         display: block;
     }
 
-      .store-locator-section {
-    padding: 20px;
+  .shipping-returns-container {
+    max-width: 100vw;
+    margin: 0;
+    padding: 14px 7px;
+    border-radius: 0;
+    box-shadow: none;
   }
-
-  #store-search-input{
-    flex-direction: column;
+  .breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
   }
-
-  .store-search-btn {
-    width: 100%;
+  .main-title {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
-
-  .store-box {
-    padding: 15px;
+  .section-title {
+    font-size: 14px;
+    margin-top: 22px;
+    margin-bottom: 6px;
   }
-
-  .store-box h4 {
-    font-size: 15px;
-  }
-
-  .store-box p {
-    font-size: 13px;
+  p {
+    font-size:12px;
+    margin-bottom: 10px;
   }
 
 }
@@ -1182,29 +1136,6 @@ a {
         height: auto;
     }
 
-   .store-locator-header h1 {
-    font-size: 22px;
-  }
 
-  .store-locator-header h3 {
-    font-size: 16px;
-  }
-
-  .map-wrapper {
-    height: 300px;
-  }
-
-    .store-locator-wrapper {
-    flex-direction: column;
-  }
-
-  .store-list,
-  .map-wrapper {
-    width: 100%;
-  }
-
-  .map-wrapper {
-    height: 400px;
-  }
 
 }

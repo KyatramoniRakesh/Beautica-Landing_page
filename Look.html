@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Beautica Cosmetics</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link rel="stylesheet" href="home.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Store</title>
+    <link rel="stylesheet" href="./CSS/Store.css">
+    <link rel="stylesheet" href="./CSS/Look.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 </head>
 
 <body>
 
-	    <!-- Top Nav -->
+    <!-- Top Nav -->
     <div class="top-nav">
         <div class="top-nav-left">3 Free Samples with any Purchase</div>
         <div class="top-nav-right">
@@ -397,7 +398,7 @@
                                 <li>Lingerie Layout</li>
                             </ul>
                         </li>
-                        <li><a href="Products.html">Product Page</a></li>
+                        <li>Product Page</li>
                         <li>Category Page</li>
                     </ul>
                 </div>
@@ -412,13 +413,13 @@
                     <ul class="demo-main-menu">
                         <li id="pages_li"><a href="new.html"> About Us</a></li>
                         <li id="pages_li"><a href="contactus.html">Contact Us</a></li>
-                        <li id="pages_li"><a href="Blog.html">Blog</a></li>
-                        <li id="pages_li"><a href="Blog Details.html">Blog Details</a></li>
-                        <li id="pages_li"><a href="Brands.html">Brands</a></li>
-                        <li id="pages_li"><a href="Store.html">Find A Store</a></li>
-                        <li id="pages_li"><a href="FAQs.html">FAQs</a></li>
-                        <li id="pages_li"><a href="Look.html">Lookbook</a></li>
-                        <li id="pages_li"><a href="shipping.html">Shipping  & Returns</a></li>
+                        <li id="pages_li">Blog</li>
+                        <li id="pages_li">Blog Details</li>
+                        <li id="pages_li">Brands</li>
+                        <li id="pages_li">Find A Store</li>
+                        <li id="pages_li">FAQs</li>
+                        <li id="pages_li">LookBook</li>
+                        <li id="pages_li">Shipping & Returns</li>
                     </ul>
                 </div>
             </li>
@@ -443,10 +444,62 @@
     </div>
 
 
-    <!--------- -------------->
+    <!--------- Find A Store -------------->
 
 
-  
+    <div class="lookbook-container">
+        <div class="lookbook-title">
+            <p>Home > Pages > Lookbook</p>
+        </div>
+        <h2 style="margin-bottom: 30px;">LOOKBOOK</h2>
+
+        <div class="lookbook-main">
+            <div class="lookbook-image-wrapper">
+                <img src="./images/blog-2.jpg" alt="Lookbook Model" class="lookbook-image" />
+
+                <!-- Overlay text & + -->
+                <div class="lookbook-overlay">
+                    <div class="lookbook-text">
+                        <span class="main-text">MAKE<span class="highlight">UP</span></span>
+                        <br />
+                        <span class="hashtag">#MILANCELOS</span>
+                    </div>
+                    <span class="tooltip-plus" id="hotspotBtn">+</span>
+                </div>
+
+                <!-- Product Popup -->
+                <div class="product-popup" id="productPopup">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <a href="product-details.html" target="_blank">
+                        <img src="./images/03__01593.jpg" alt="Product">
+                    </a>
+                    <div class="popup-info">
+                        <h4>TOMORROW</h4>
+                        <p>(Product 15) Sample - Makeup, Skincare...</p>
+                        <div class="price">$98.00</div>
+                        <a href="product-details.html" target="_blank" class="details-link">DETAILS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottem-desc">
+                <div class="lookbook-description">
+                    Lookbook description goes here
+                </div>
+                <div class="lookbook-social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="lookbook-actions">
+                <button class="shop-lookbook">SHOP LOOKBOOK</button>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -454,452 +507,95 @@
 
 
 
- 
-	
-	<!-- Banner Section -->
-	<div class="banner">
-		<div class="banner-slide active" style="background-image: url('./images/banner.png');">
-			<div class="banner-content">
-				<h1>BEAUTIFULLY<br />BARE COLLECTION</h1>
-				<p>It’s the Lightweight, Natural-Looking Collection You Love</p>
-				<a href="#" class="shop-btn">SHOP NOW</a>
-			</div>
-		</div>
-		<div class="banner-slide" style="background-image: url('./images/banner2.png');">
-			<div class="banner-content">
-				<h1>SUMMER<br />ESSENTIALS</h1>
-				<p>Discover Skin-Friendly Must-Haves</p>
-				<a href="#" class="shop-btn">SHOP NOW</a>
-			</div>
-		</div>
-		<div class="banner-slide" style="background-image: url('./images/banner3.png');">
-			<div class="banner-content">
-				<h1>ALL NEW<br />MAKEUP LAUNCH</h1>
-				<p>Stay Fresh, Stay Flawless</p>
-				<a href="#" class="shop-btn">SHOP NOW</a>
-			</div>
-		</div>
-		<button class="carousel-btn prev">&#10094;</button>
-		<button class="carousel-btn next">&#10095;</button>
-		<div class="carousel-dots">
-			<span class="dot active" onclick="goToSlide(0)"></span>
-			<span class="dot" onclick="goToSlide(1)"></span>
-			<span class="dot" onclick="goToSlide(2)"></span>
-		</div>
-	</div>
+
+    <!----- FOOTER ---->
+
+    <div class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li>#Trend Now</li>
+                    <li>Fragrance</li>
+                    <li>Makeup</li>
+                    <li>Nail</li>
+                    <li>Beauty Accessories</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Theme FAQs</li>
+                    <li>New Collections</li>
+                    <li>Best Sellers</li>
+                    <li>Manufacturers</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Blog</li>
+                    <li>Gift Certificates</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li>Search Terms</li>
+                    <li>Advanced Search</li>
+                    <li>Orders and Returns</li>
+                    <li>Contact Us</li>
+                    <li>RSS</li>
+                    <li>Help & FAQs</li>
+                    <li>Consultant</li>
+                    <li>Store Locations</li>
+                </ul>
+            </div>
+            <div class="footer-column Signup">
+                <h4>NEWSLETTER SIGN UP</h4>
+                <p>Receive our latest updates about our products and promotions.</p>
+
+                <div class="signup-input">
+                    <input type="email" placeholder="enter your email address" />
+                    <button class="signup-input-btn">SUBMIT</button>
+                </div>
+
+                <h4>STAY CONNECTED</h4>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
 
 
-	<!-- 3 images -->
-	<div class="small-img">
-		<div class="img-box" style="background-image:url('./images/lips.jpg')">
-			<div class="overlay">
-				<div class="img-txt">LIPS</div>
-			</div>
-		</div>
-		<div class="img-box" style="background-image:url('./images/face.jpg')">
-			<div class="overlay">
-				<div class="img-txt">FACE</div>
-			</div>
-		</div>
-		<div class="img-box" style="background-image:url('./images/tools.jpg')">
-			<div class="overlay">
-				<div class="img-txt">TOOLS</div>
-			</div>
-		</div>
-	</div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-items">
+                <div class="rights">
+                    <p>© 2025 beautica-light.All Rights Reserved.Ecommerce Software by BigCommerce.</p>
+                    <p>BigCommerce Themes by ThemeVale.com</p>
+                </div>
+                <div class="footer-bottom-imgs">
+                    <img src="./images/visa.jpg" alt="logos" />
+                    <img src="./images/master.jpg" alt="logos" />
+                    <img src="./images/american.jpg" alt="logos" />
+                    <img src="./images/discover.jpg" alt="logos" />
+                    <img src="./images/cirrus.jpg" alt="logos" />
+                    <img src="./images/paypal.jpg" alt="logos" />
+                    <img src="./images/western.jpg" alt="logos" />
 
-	<!-- Just Arrived -->
+                </div>
+            </div>
+        </div>
 
-	<div class="arrived">
-
-		<h2>Just Arrived</h2>
-		<p>Magnis de darturien eros laciniados de cosmopolis dinterdum</p>
-
-	</div>
+    </div>
 
 
-	<!-- Product Cards -->
+    <script>
 
-	<div class="product-container">
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product1.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product6.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product2.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product7.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product3.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product1.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product4.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product5.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product7.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product6.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- 2nd Product Cards -->
-
-	<div class="two-cards-container">
-		<div class="two-cards">
-			<div class="two-cards-img">
-				<img class="two-card-img" src="./images/lotin.jpg" alt="img" />
-				<div class="image-overlay"></div>
-				<div class="img-title"><span>#Trend:</span> Milancelos</div>
-			</div>
-			<p class="two-cards-info">
-				Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia de consequat velit.
-				Quisquemos sodales suscipit tortors...
-			</p>
-			<a href="#" class="Shop-now">Shop Now</a>
-		</div>
-
-		<div class="two-cards">
-			<div class="two-cards-img">
-				<img class="two-card-img" src="./images/N8.jpg" alt="img" />
-				<div class="image-overlay"></div>
-				<div class="img-title">#Cosmopolis</div>
-			</div>
-			<p class="two-cards-info">
-				Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia de consequat velit.
-				Quisquemos sodales suscipit tortors...
-			</p>
-			<a href="#" class="Shop-now">Shop Now</a>
-		</div>
-	</div>
-
-	<hr class="new1">
-
-	<!-- Featured Products-->
-	<div class="arrived">
-
-		<h2>Featured Products</h2>
-		<p>Magnis de darturien eros laciniados de cosmopolis dinterdum</p>
-
-	</div>
-
-	<!-- Product Cards -->
-
-	<div class="product-container">
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product9.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product6.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product6.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product7.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product8.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product1.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product4.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product5.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product5.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product6.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-	</div>
-
-	<hr class="new1">
-
-	<!--- From Our Blog ---->
-
-	<div class="blog">
-		<div class="blog-title">
-			<h1>From Our Blog</h1>
-		</div>
-
-		<div class="blog-container">
-
-			<div class="blog-card">
-				<div class="blog-img">
-					<img src="./images/blog-2.jpg" alt="blog-img">
-					<div class="blog-overlay">
-
-					</div>
-				</div>
-				<div class="blog-txt">
-					<p class="blog-meta">by ThemeVale on 1st Feb 2023</p>
-					<h3 class="blog-title">Naminos Elementum Disumos Ann...</h3>
-					<p class="blog-desc">Nullam aliquet vestibulum augue non varius. Duis risus leo, elementum in
-						malesuada an darius ut augue. Cras sit amet lectus et justo euismod sed n…</p>
-					<button class="view-details">VIEW DETAILS</button>
-				</div>
-			</div>
-
-			<div class="blog-card">
-				<div class="blog-img">
-					<img src="./images/blog-1.jpg" alt="blog-img">
-					<div class="blog-overlay">
-					</div>
-				</div>
-				<div class="blog-txt">
-					<p class="blog-meta">by ThemeVale on 15th Feb 2014</p>
-					<h3 class="blog-title">Loremous Cosmopolis</h3>
-					<p class="blog-desc">Nullam aliquet vestibulum augue non varius. Duis risus leo, elementum in
-						malesuada an darius ut augue. Cras sit amet lectus et justo euismod sed n…</p>
-					<button class="view-details">VIEW DETAILS</button>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-	<hr class="new1">
-	<!----- Logos ---->
-
-	<div class="logos-container">
-		<h3>Shop Our Top Brands</h3>
-		<div class="logos">
-			<button class="logos-prevs">&#10094;</button>
-			<div class="logos-imgs">
-
-				<img src="./images/brand-logo-1.png" alt="logo2">
-				<img src="./images/brand-logo-2.png" alt="logo2">
-				<img src="./images/brand-logo-3.png" alt="logo3">
-				<img src="./images/brand-logo-4.png" alt="logo4">
-				<img src="./images/brand-logo-5.png" alt="logo5">
-			</div>
-			<button class="logos-next">&#10095;</button>
-		</div>
-	</div>
-	<hr class="new1">
-
-
-	<!----- Follow Us On Instagram ---->
-
-	<div class="follow">
-		<h2>Follow Us On Instagram</h2>
-		<p class="hashtag">#BEAUTICACOSMETICS</p>
-
-		<div class="follow-carousel">
-			<button class="follow-prev">&#10094;</button>
-
-			<div class="follow-imgs">
-				<img src="./images/insta1.jpg" alt="Instagram 1">
-				<img src="./images/insta2.jpg" alt="Instagram 2">
-				<img src="./images/insta3.jpg" alt="Instagram 3">
-				<img src="./images/insta4.jpg" alt="Instagram 4">
-				<img src="./images/insta5.jpg" alt="Instagram 5">
-				<img src="./images/insta6.jpg" alt="Instagram 6">
-				<img src="./images/insta7.jpg" alt="Instagram 7">
-				<img src="./images/insta8.jpg" alt="Instagram 8">
-
-
-			</div>
-
-			<button class="follow-next">&#10095;</button>
-		</div>
-	</div>
-
-
-	<!----- FOOTER ---->
-
-	<div class="footer">
-		<div class="footer-grid">
-			<div class="footer-column">
-				<h4>Shop</h4>
-				<ul>
-					<li>#Trend Now</li>
-					<li>Fragrance</li>
-					<li>Makeup</li>
-					<li>Nail</li>
-					<li>Beauty Accessories</li>
-				</ul>
-			</div>
-			<div class="footer-column">
-				<h4>INFORMATION</h4>
-				<ul>
-					<li>About Us</li>
-					<li>Theme FAQs</li>
-					<li>New Collections</li>
-					<li>Best Sellers</li>
-					<li>Manufacturers</li>
-					<li>Privacy Policy</li>
-					<li>Terms & Conditions</li>
-					<li>Blog</li>
-					<li>Gift Certificates</li>
-				</ul>
-			</div>
-			<div class="footer-column">
-				<h4>CUSTOMER SERVICE</h4>
-				<ul>
-					<li>Search Terms</li>
-					<li>Advanced Search</li>
-					<li>Orders and Returns</li>
-					<li>Contact Us</li>
-					<li>RSS</li>
-					<li>Help & FAQs</li>
-					<li>Consultant</li>
-					<li>Store Locations</li>
-				</ul>
-			</div>
-			<div class="footer-column Signup">
-				<h4>NEWSLETTER SIGN UP</h4>
-				<p>Receive our latest updates about our products and promotions.</p>
-
-				<div class="signup-input">
-					<input type="email" placeholder="enter your email address" />
-					<button class="signup-input-btn">SUBMIT</button>
-				</div>
-
-				<h4>STAY CONNECTED</h4>
-				<div class="social-icons">
-					<i class="fab fa-facebook-f"></i>
-					<i class="fab fa-twitter"></i>
-					<i class="fab fa-pinterest-p"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-youtube"></i>
-				</div>
-			</div>
-
-		</div>
-
-
-		<div class="footer-bottom">
-			<div class="footer-bottom-items">
-				<div class="rights">
-					<p>© 2025 beautica-light.All Rights Reserved.Ecommerce Software by BigCommerce.</p>
-					<p>BigCommerce Themes by ThemeVale.com</p>
-				</div>
-				<div class="footer-bottom-imgs">
-					<img src="./images/visa.jpg" alt="logos" />
-					<img src="./images/master.jpg" alt="logos" />
-					<img src="./images/american.jpg" alt="logos" />
-					<img src="./images/discover.jpg" alt="logos" />
-					<img src="./images/cirrus.jpg" alt="logos" />
-					<img src="./images/paypal.jpg" alt="logos" />
-					<img src="./images/western.jpg" alt="logos" />
-
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-
-	<script src="script.js"></script>
-	    <script>
-     // Main Sidebar open/close
+        // Main Sidebar open/close
         function openSidebar() {
             document.getElementById('sidebar').classList.add('active');
         }
@@ -907,7 +603,27 @@
         function closeSidebarFunction() {
             document.getElementById('sidebar').classList.remove('active');
         }
-    </script>
+
+
+    const hotspotBtn = document.getElementById("hotspotBtn");
+    const productPopup = document.getElementById("productPopup");
+    const popupClose = document.getElementById("popupClose");
+
+    hotspotBtn.addEventListener("click", () => {
+      productPopup.style.display = "block";
+    });
+
+    popupClose.addEventListener("click", () => {
+      productPopup.style.display = "none";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!productPopup.contains(e.target) && !hotspotBtn.contains(e.target)) {
+        productPopup.style.display = "none";
+      }
+    });
+  </script>
+
 </body>
 
-</Html>
+</html>
