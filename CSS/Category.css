@@ -46,8 +46,11 @@ body {
   align-items: center;
 }
 
+.category-filter-section h3:hover {
+  color: pink;
+}
+
 .category-filter-section h3 .highlight {
-  color: #ec4899; /* Pink for #Trend Now */
   font-weight: bold;
 }
 
@@ -58,6 +61,11 @@ body {
   margin: 0;
   padding-left: 15px;
 }
+
+/* .collapsible li:hover{
+  font-size: 14px;
+  font-weight: bold;
+  } */
 
 .collapsible.open {
   max-height: 500px;
@@ -76,15 +84,16 @@ body {
 }
 
 .arrow {
-  font-size: 10px;
+  font-size: 14px;
   margin-left: 5px;
   transition: transform 0.3s ease;
 }
 
-.collapsible.open + .arrow,
+.collapsible.open+.arrow,
 .category-filter-section h3.open .arrow {
   transform: rotate(180deg);
 }
+
 .collapsible li {
   position: relative;
   display: block;
@@ -102,11 +111,204 @@ body {
   padding: 6px 0;
   font-size: 12px;
 }
+
 .collapsible li .arrow {
   margin-left: auto;
   transform: rotate(0deg);
 }
 
-.collapsible.open + .arrow {
+.collapsible.open+.arrow {
   transform: rotate(180deg);
+}
+
+.collapsible li.open>.arrow {
+  transform: rotate(180deg);
+}
+
+
+
+/* Sidebar */
+/* Base Sidebar Style (Desktop Default) */
+.category-sidebar {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+/* Toggle Button - Hidden on Desktop */
+.category-sidebar-toggle {
+  display: none;
+  /* position: fixed; */
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.category-sidebar-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Overlay - Hidden on Desktop */
+.sidebar-overlay {
+  display: none;
+}
+
+.category-sidebar-close {
+  display: none;
+}
+
+
+/* ===== RIGHT CATEGORY ===== */
+.enchanted-img-overlay{
+  position: relative;
+}
+
+.enchanted img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.enchanted h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.enchanted p {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  max-width: 900px;
+}
+.enchanted-img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.enchanted-img-overlay img {
+  width: 100%;
+  display: block;
+}
+
+.img-dark-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  transition: height 0.6s ease;
+  z-index: 2;
+}
+
+.enchanted-img-overlay:hover .img-dark-overlay {
+  height: 80%;
+  opacity: 20%;
+}
+
+
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .category {
+    flex-direction: column;
+  }
+
+  /* Sidebar turns into drawer */
+  .category-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background-color: white;
+    z-index: 1500;
+    transition: left 0.3s ease;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+
+  .category-sidebar.open {
+    left: 0;
+  }
+
+  .category-sidebar-toggle {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    color: red;
+    z-index: 0;
+
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1400;
+  }
+
+  .category-sidebar.open~.sidebar-overlay {
+    display: block;
+  }
+
+  .category-sidebar-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+
+  /* ===== RIGHT CATEGORY ===== */
+  .enchanted {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .enchanted img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .enchanted h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .enchanted p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* max-width: 500px; */
+
+  }
+  .enchanted-img-overlay:hover .img-dark-overlay {
+  height: 80%;
+  opacity: 20%;
+}
+
+
 }
