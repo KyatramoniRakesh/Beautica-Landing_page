@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
 </head>
 
 <body>
@@ -454,9 +453,7 @@
 
 
     <div class="category">
-        <button class="category-sidebar-toggle" onclick="toggleSidebar()">
-            <span>☰ Sidebar</span>
-        </button>
+
         <div class="category-sidebar">
             <button class="category-sidebar-close" onclick="closeSidebar()">✕</button>
             <h2>CATEGORIES</h2>
@@ -568,21 +565,70 @@
                 </ul>
             </div>
         </div>
-        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+
 
         <div class="right-category">
             <div class="enchanted">
                 <div class="enchanted-img-overlay">
                     <img src="./images/enchanted.jpg" alt="Enchanted" />
-                    <div class="img-dark-overlay"></div> 
+                    <div class="img-dark-overlay"></div>
                 </div>
                 <h3>#TRENDNOW</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque non nulla nulla, nec tincidunt risus
                     morbi ultricies est ditae odio ultrices imperdiet. Cras accumsan dorci maces consequat blandi susto
                     dusto elementum libero non honcus purus sem sit amet enimos. </p>
             </div>
+
+
+            <div class="view-as">
+                <button class="category-sidebar-toggle" onclick="toggleSidebar()">
+                    <span>☰ Sidebar</span>
+                </button>
+                <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+                <div class="view-icons">
+                    <h4>VIEW AS</h4>
+                    <div class="grid-icons">
+                        <i class="fa-solid fa-grip" id="gridView"></i>
+                        <i class="fa-solid fa-grip-vertical" id="listView"></i>
+                    </div>
+
+                </div>
+
+                <div class="sort">
+                    <h4>SORT BY</h4>
+                    <select name="featured-items">
+                        <option>Featured Items</option>
+                        <option>Newest Items</option>
+                        <option>Best Sellings</option>
+                        <option>A to Z</option>
+                        <option>Z to A</option>
+                        <option>By Review</option>
+                        <option>Price Asceding</option>
+                        <option>Price Desceding</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- CARDS -->
+            <div class="products-grid" id="productcontainer">
+
+            </div>
+
+
         </div>
 
+
+    </div>
+    <!-- BOTTOM 3 CARDS -->
+    <div class="bottom-container" id="bottom-container">
+        <div class="slider-content" id="slider-content">
+
+        </div>
+        <div class="slider-dots" id="slide-dots">
+
+        </div>
     </div>
 
 
@@ -675,7 +721,7 @@
         </div>
 
     </div>
-
+    <script src="cards.js"></script>
     <script>
         function openSidebar() {
             document.getElementById('sidebar').classList.add('active');
