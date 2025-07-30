@@ -51,6 +51,41 @@ const products = [
         new_badge: 'NEW'
     },
 
+    // adding new cards
+
+    {
+        title: 'Tomorrow',
+        description: '(Product 20) Sample - Makeup, Skincare And Perfumes For Sale',
+        price: '&99.09',
+        image: './images/products/product4.png',
+        hoverimage: './images/products/product5.png',
+        new_badge: 'NEW'
+    },
+    {
+        title: 'Tomorrow',
+        description: '(Product 20) Sample - Makeup, Skincare And Perfumes For Sale',
+        price: '&99.09',
+        image: './images/products/product2.png',
+        hoverimage: './images/products/product3.png',
+        new_badge: 'NEW'
+    },
+    {
+        title: 'Tomorrow',
+        description: '(Product 20) Sample - Makeup, Skincare And Perfumes For Sale',
+        price: '&99.09',
+        image: './images/products/product4.png',
+        hoverimage: './images/products/product5.png',
+        new_badge: 'NEW'
+    },
+    {
+        title: 'Tomorrow',
+        description: '(Product 20) Sample - Makeup, Skincare And Perfumes For Sale',
+        price: '&99.09',
+        image: './images/products/product2.png',
+        hoverimage: './images/products/product3.png',
+        new_badge: 'NEW'
+    },
+
 
 ];
 
@@ -68,13 +103,15 @@ function createCards(product) {
                 <img src="${product.image}" class="product-img"  alt="product image" />
                 <img src="${product.hoverimage}" class="product-hover-img"  alt="hover image" />
             </div>
-            <div class="quick-view">QUICK VIEW</div>
-            <div class="product-title"> ${product.title}</div>
-            <div class="product-desc">${product.description}</div>
-            <div class="product-price"> ${product.price}</div>
-            <div class="product-rating"> &#9734;&#9734;&#9734;&#9734;&#9734; </div>
-            <button class="add-to-cart"> ADD TO CART</button>
-            <div class="compare"><input type="checkbox"> Compare</div>
+            <div>
+                <div class="quick-view">QUICK VIEW</div>
+                <div class="product-title"> ${product.title}</div>
+                <div class="product-desc">${product.description}</div>
+                <div class="product-price"> ${product.price}</div>
+                <div class="product-rating"> &#9734;&#9734;&#9734;&#9734;&#9734; </div>
+                <button class="add-to-cart"> ADD TO CART</button>
+                <div class="compare"><input type="checkbox"> Compare</div>
+            </div>
         
         `;
 
@@ -94,6 +131,22 @@ function renderCards(productsArray, containerId) {
 
 
 renderCards(products, 'productcontainer');
+
+
+// for the SEEMORE BUTTON
+
+const grid = document.querySelector('.products-grid');
+const seeMoreBtn = document.querySelector('.see-more');
+
+seeMoreBtn.addEventListener('click', () => {
+  grid.classList.toggle('expanded');
+
+  if (grid.classList.contains('expanded')) {
+    seeMoreBtn.textContent = 'SEE LESS';
+  } else {
+    seeMoreBtn.textContent = 'SEE MORE';
+  }
+});
 
 
 
@@ -184,3 +237,57 @@ function generateDots() {
 
 generateDots();
 renderSlide(currentIndex);
+
+
+
+
+
+// SHOP CARDS
+
+shopCards = [
+    {
+        icon : '<i class="fa-solid fa-earth-americas"></i>',
+        title : 'Free Shipping US Order $499' ,
+        para : 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque non nulla nulla, nec tincidunt risus morbi ultricies est ditae odio ultrices imperdiet. Cras accumsan dorci maces consequat blandi susto dusto elementum libero non honcus purus sem sit amet enimos. ',
+        button : 'READ MORE',
+    },
+    {
+        icon : '<i class="fa-solid fa-rotate-right"></i>',
+        title : 'Free in Store Returns' ,
+        para : 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque non nulla nulla, nec tincidunt risus morbi ultricies est ditae odio ultrices imperdiet. Cras accumsan dorci maces consequat blandi susto dusto elementum libero non honcus purus sem sit amet enimos. ',
+        button : 'READ MORE',
+    },
+    {
+        icon : '<i class="fa-solid fa-shield-halved"></i>',
+        title : 'Secure Shopping Guarantee' ,
+        para : 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque non nulla nulla, nec tincidunt risus morbi ultricies est ditae odio ultrices imperdiet. Cras accumsan dorci maces consequat blandi susto dusto elementum libero non honcus purus sem sit amet enimos. ',
+        button : 'READ MORE',
+    },
+    {
+        icon : '<i class="fa-regular fa-circle-check"></i>',
+        title : '24 Month Warranty' ,
+        para : 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque non nulla nulla, nec tincidunt risus morbi ultricies est ditae odio ultrices imperdiet. Cras accumsan dorci maces consequat blandi susto dusto elementum libero non honcus purus sem sit amet enimos. ',
+        button : 'READ MORE',
+    },
+];
+
+
+const shopCardContainer = document.querySelector('.shop-cards-container');
+
+function createShopCards(prod){
+    const Scard =document.createElement('div');
+    Scard.classList.add('shop-card')
+    Scard.innerHTML = `
+        <div class="shop-card-icon" >${prod.icon}</div>
+        <h4>${prod.title}</h4>
+        <p>${prod.para}</p>
+        <button>${prod.button}</button>
+    `;
+    return Scard;
+};
+
+ shopCards.forEach((prod) =>{
+
+    const shopCardElement = createShopCards(prod);
+    shopCardContainer.appendChild(shopCardElement);
+ });
