@@ -276,7 +276,7 @@
 
 
 
-.add-to-cart {
+.add-to-cart-btn {
   background: black;
   color: white;
   padding: 10px 20px;
@@ -325,6 +325,12 @@
   font-size: 24px;
 }
 
+.icon-btn:hover{
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  
+}
 
 /* Frequently Bought */
 .frequently {

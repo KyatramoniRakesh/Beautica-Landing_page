@@ -463,10 +463,12 @@
 
 		</div>
 	</div>
-	<div class="product-page">
+
+
+	<!-- <div class="product-page"> -->
 
 		<!-- LEFT SECTION -->
-		<div class="left-panel">
+		<!-- <div class="left-panel">
 			<div class="thumbnails">
 				<button id="thumb-up"><span>&#9650;</span> </button>
 				<div class="thumb-list">
@@ -491,10 +493,10 @@
 				</div>
 				<p class="compare-colors">🎨 Compare Colors</p>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- RIGHT SECTION -->
-		<div class="right-panel">
+		<!-- <div class="right-panel">
 			<p class="brand"><a href="#" id="coco">COCO LEE</a></p>
 			<h1 class="product-title">(Product 5) Sample – Makeup, Skincare And Perfumes For Sale</h1>
 			<div class="rating">
@@ -570,8 +572,18 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
+	<!-- </div> -->
+
+
+	<div class="product-carousel">
+
+    <div id="productContainer" class="product-page">
+
 	</div>
+
+  </div>
+
 
 	<!----- end of coco lee ---->
 
@@ -848,6 +860,9 @@
 
 	</div>
 
+
+
+	<script src="Products.js"></script>
 	<script>
 		function openSidebar() {
 			document.getElementById('sidebar').classList.add('active');
@@ -880,10 +895,12 @@
 		};
 
 
-		let qty = 0;
+		let qty = 1;
 		const qtyDisplay = document.getElementById('qty');
 		const increaseBtn = document.getElementById('increase');
 		const decreaseBtn = document.getElementById('decrease');
+
+		qtyDisplay.textContent = qty;
 
 		increaseBtn.addEventListener('click', () => {
 			qty++;
