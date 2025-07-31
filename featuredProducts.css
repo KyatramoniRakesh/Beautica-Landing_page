@@ -1,0 +1,191 @@
+.featured-section {
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.featured-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.featured-subtitle {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* === Carousel Wrapper === */
+.featured-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1300px;
+  align-content: center;
+  
+}
+
+/* === Scrollable Product Track === */
+.featured-product-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+  align-items: center;
+}
+
+.featured-product-container::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+/* === Product Card === */
+.featured-card {
+  flex: 0 0 auto;
+  width: 240px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Image Wrapper === */
+.featured-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.featured-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Hover transition */
+.featured-image-wrapper:hover .featured-front {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.featured-image-wrapper:hover .featured-back {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* === Quick View Button === */
+.featured-quick-view {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  font-size: 12px;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+
+.featured-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #000;
+  z-index: 2;
+}
+
+/* === Info Section === */
+.featured-info {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+.featured-brand {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.featured-description {
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  height: 40px;
+  overflow: hidden;
+}
+
+.featured-price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* === Add to Cart Button === */
+.featured-add-to-cart {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.featured-add-to-cart:hover {
+  background-color: #333;
+}
+
+/* === Arrows === */
+.featured-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0 1rem;
+  color: #333;
+}
+
+.featured-left {
+  position: absolute;
+  left: 0;
+}
+
+.featured-right {
+  position: absolute;
+  right: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .featured-card {
+    width: 180px;
+  }
+
+  .featured-title {
+    font-size: 1.5rem;
+  }
+
+  .featured-subtitle {
+    font-size: 0.875rem;
+  }
+}

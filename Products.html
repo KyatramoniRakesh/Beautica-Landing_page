@@ -577,10 +577,187 @@
 
 	<hr style="border: 1px solid #ccc;width:80%;align-items:center;">
 
-<!----- Frequently Bought Together ---->
+	<!----- Frequently Bought Together ---->
 
 
+	<div class="tabs">
+		<div class="tabs-buttons">
+			<button class="tab-btn active" onclick="openTab(event,0)">DESCRIPTION</button>
+			<button class="tab-btn" onclick="openTab(event,1)">PRODUCT REVIEWS</button>
+			<button class="tab-btn" onclick="openTab(event,2)">SHIPPING & RETURNS</button>
+			<button class="tab-btn" onclick="openTab(event,3)">CUSTOM PRODUCT TAB</button>
+		</div>
+		<div class="tab-content">
+			<!-- 1. Description Tab -->
+			<div class="tab-data active">
+				<div class="sample-unorder">
+					<div>
+						<p>
+							Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis.
+							Pellentesque diam dolor, elementum etos lobortis des mollis ut rissus. Sedcus faucibus an
+							sullamcorper mattis drostique des commodo pharetas lorermos. Donec pretium egestas sapien et
+							mollis.
+						</p>
 
+
+						<div style="display: flex;">
+							<span class="samp-un">
+								<strong>SAMPLE UNORDERED LIST</strong><br>
+								Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitud felis.
+								Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an
+								sullamcorper mattis drostique.
+								<ul>
+									<li>Comodus in tempor ullamcorper miaculis.</li>
+									<li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+									<li>Divamus sit amet purus justo.</li>
+									<li>Proin molestie egestas orci ac suscipit risus posuere loremous.</li>
+								</ul>
+							</span>
+							<div class="samp-un">
+								<img src="./images/description-image-1.jpg" alt="Sample Product Image">
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="imgs-middle-p">
+					<p>
+						Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu convallis est.
+						Cras felis nunc commodo eu convallis vitae interdum non nisl. Maecenas ac est sit amet augue
+						pharetra convallis nec danos dui. Cras suscipit quam et turpis eleifend vitae malesuada magna
+						congue. Damus id ullamcorper neque. Sed vitae mi a mi pretium aliquet ac sed elit. Pellentesque
+						nulla eros accumsan quis justo at tincidunt lobortis denimes loremous.
+					</p>
+
+				</div>
+				<div class="sample-unorder">
+					<img src="./images/description-image-2.jpg" alt="Image Middle">
+					<div class="sample-p-txt">
+						<strong>SAMPLE PARAGRAPH TEXT</strong>
+						<p id="sample-p-txt-p">
+							Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu convallis
+							est. Cras felis nunc commodo eu convallis vitae interdum non nisl. Maecenas ac est sit amet
+							augue pharetra convallis nec danos dui. Cras suscipit quam et turpis eleifend vitae
+							malesuada magna congue.
+						</p>
+					</div>
+
+				</div>
+				<div class="sample-unorder">
+				<div class="samp-un">
+					<strong>SAMPLE UNORDERED LIST</strong>
+					<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitud felis.
+						Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an
+						sullamcorper mattis drostique.</p>
+					<ul>
+						<li>Comodus in tempor ullamcorper miaculis.</li>
+						<li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+						<li>Divamus sit amet purus justo.</li>
+						<li>Proin molestie egestas orci ac suscipit risus posuere loremous.</li>
+					</ul>
+				</div>
+				</div>
+				<div class="sample-p-txt">
+					<strong>SAMPLE PARAGRAPH TEXT</strong>
+					<p>
+						Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu convallis est.
+						Cras felis nunc commodo eu convallis vitae interdum non nisl. Maecenas ac est sit amet augue
+						pharetra convallis nec danos dui. Cras suscipit quam et turpis eleifend vitae malesuada magna
+						congue.
+						Damus id ullamcorper neque. Sed vitae mi a mi pretium aliquet ac sed elit. Pellentesque nulla
+						eros accumsan quis justo at tincidunt lobortis denimes loremous. Suspendisse vestibulum lectus
+						in lectus volutpat, ut dapibus purus pulvinar. Vestibulum sit amet auctor ipsum.
+					</p>
+				</div>
+			</div>
+			<!-- 2. Product Reviews Tab -->
+			<div class="tab-data">
+				<div class="review-container">
+					<button class="write-review-btn">WRITE A REVIEW</button>
+					<!-- Show reviews if any, else use this: -->
+					<div class="review-box">
+						<strong>Great product!</strong>
+						<div class="stars"><span>★★★★★</span></div>
+						<div class="posted-by">Posted by Alice, 2 days ago</div>
+						<div class="review-comment">I loved how this feels on my skin.</div>
+					</div>
+				</div>
+			</div>
+			<!-- 3. Shipping & Returns Tab -->
+			<div class="tab-data">
+				<div class="policy-section">
+					<div class="policy-block">
+						<h4>RETURNS POLICY</h4>
+						<p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll
+							also pay the return shipping costs if the return is a result of our error (you received an
+							incorrect or defective item, etc.).</p>
+						<p>
+							You should expect to receive your refund within four weeks of giving your package to the
+							return shipper, however, in many cases you will receive a refund more quickly. This time
+							period includes the transit time for us to receive your return from the shipper (5 to 10
+							business days), the time it takes us to process your return once we receive it (3 to 5
+							business days), and the time it takes your bank to process our refund request (5 to 10
+							business days).
+						</p>
+						<p>
+							If you need to return an item, please <a href="#">Contact Us</a> with your order number and
+							details about the product you would like to return. We will respond quickly with
+							instructions for how to return items from your order.
+						</p>
+					</div>
+					<div class="policy-block">
+						<h4>SHIPPING</h4>
+						<p>We can ship to virtually any address in the world. Note that there are restrictions on some
+							products, and some products cannot be shipped to international destinations.</p>
+						<p>When you place an order, we will estimate shipping and delivery dates for you based on the
+							availability of your items and the shipping options you choose. Depending on the shipping
+							provider you choose, shipping date estimates may appear on the shipping quotes page.</p>
+						<p>Please also note that the shipping rates for many items we sell are weight-based. The weight
+							of any such item can be found on its detail page. To reflect the policies of the shipping
+							companies we use, all weights will be rounded up to the next full pound.</p>
+					</div>
+				</div>
+			</div>
+			<!-- 4. Custom Product Tab -->
+			<div class="tab-data">
+				<div class="description-section">
+					<div class="description-text">
+						We design with you and nature in mind. Small batch, local, and with love. We use sustainable,
+						high quality fabrics with low impact dyes and our limited edition natural dyed items are hand
+						dyed with plants we have often harvested ourselves. Every creation is made with you in mind to
+						move through your day with radiance and natural style.
+					</div>
+					<div class="info-grid">
+						<div class="info-row">
+							<div class="label">Model Information</div>
+							<div class="value">Model is 5’10”, with a 33" bust, 24" waist & 34.5" hips – she wears size
+								XS.</div>
+						</div>
+						<div class="info-row">
+							<div class="label">Composition</div>
+							<div class="value">100% cotton.</div>
+						</div>
+						<div class="info-row">
+							<div class="label">Care</div>
+							<div class="value">Specialist leather clean.</div>
+						</div>
+						<div class="info-row">
+							<div class="label">Standard Delivery</div>
+							<div class="value">Delivered in 2-4 working days.</div>
+						</div>
+						<div class="info-row">
+							<div class="label">Returns</div>
+							<div class="value">We hope you’re delighted with your order. If you’re not perfectly
+								satisfied, you may request a return for your item(s) within 28 days. You will then have
+								a further 14 days following your request to return unsuitable items.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 
 
@@ -720,6 +897,19 @@
 			}
 
 		});
+
+
+
+		//TABS 
+
+		function openTab(e, n) {
+			// Buttons
+			var btns = document.querySelectorAll('.tab-btn');
+			btns.forEach((btn, i) => btn.classList.toggle('active', i === n));
+			// Tab panes
+			var datas = document.querySelectorAll('.tab-data');
+			datas.forEach((el, i) => el.classList.toggle('active', i === n));
+		}
 	</script>
 
 

@@ -8,445 +8,443 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="home.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="stylesheet" href="featuredProducts.css">
+	
 </head>
 
 <body>
 
-	    <!-- Top Nav -->
-    <div class="top-nav">
-        <div class="top-nav-left">3 Free Samples with any Purchase</div>
-        <div class="top-nav-right">
-            <ul>
-                <li>Order Online <strong>(1800) 000 BEAUTICA</strong></li>
-                <li>Gift Certificates</li>
-                <li>Sign In</li>
-                <li><img src="https://flagcdn.com/us.svg" alt="US" class="flag"> US Dollar</li>
-            </ul>
-        </div>
-    </div>
+	<!-- Top Nav -->
+	<div class="top-nav">
+		<div class="top-nav-left">3 Free Samples with any Purchase</div>
+		<div class="top-nav-right">
+			<ul>
+				<li>Order Online <strong>(1800) 000 BEAUTICA</strong></li>
+				<li>Gift Certificates</li>
+				<li>Sign In</li>
+				<li><img src="https://flagcdn.com/us.svg" alt="US" class="flag"> US Dollar</li>
+			</ul>
+		</div>
+	</div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="hamburger" onclick="openSidebar()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="search-box" id="nav-searchbar-store">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search for a product">
-        </div>
-        <div class="logo">
-            <img src="./images/beautic.png" alt="Beautica Logo">
-        </div>
-        <div class="user-area">
-            <div class="login-info">
-                <strong>HI, CUSTOMER</strong>
-                <p><a href="#">Login or Register</a></p>
-            </div>
-            <div class="divider"></div>
-            <div class="icons">
-                <i class="fas fa-heart"></i>
-                <div class="cart-icon">
-                    <i class="fas fa-bag-shopping"></i>
-                    <span class="badge_top">0</span>
-                </div>
-            </div>
-        </div>
-    </header>
+	<!-- Header -->
+	<header class="header">
+		<div class="hamburger" onclick="openSidebar()">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="search-box" id="nav-searchbar-store">
+			<i class="fas fa-search"></i>
+			<input type="text" placeholder="Search for a product">
+		</div>
+		<div class="logo">
+			<img src="./images/beautic.png" alt="Beautica Logo">
+		</div>
+		<div class="user-area">
+			<div class="login-info">
+				<strong>HI, CUSTOMER</strong>
+				<p><a href="#">Login or Register</a></p>
+			</div>
+			<div class="divider"></div>
+			<div class="icons">
+				<i class="fas fa-heart"></i>
+				<div class="cart-icon">
+					<i class="fas fa-bag-shopping"></i>
+					<span class="badge_top">0</span>
+				</div>
+			</div>
+		</div>
+	</header>
 
-    <!-- Sidebar Structure -->
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <h3>Menu</h3>
-            <button class="close-btn" onclick="closeSidebarFunction()">&times;</button>
-        </div>
+	<!-- Sidebar Structure -->
+	<div id="sidebar" class="sidebar">
+		<div class="sidebar-header">
+			<h3>Menu</h3>
+			<button class="close-btn" onclick="closeSidebarFunction()">&times;</button>
+		</div>
 
-        <ul class="sidebar-menu">
-            <li>#TREND NOW <span class="badge new">New</span> <span class="arrow">&gt;</span></li>
-            <li>FRAGRANCE <span class="arrow">&gt;</span></li>
-            <li>MAKEUP <span class="badge hot">Hot</span> <span class="arrow">&gt;</span></li>
-            <li>NAIL</li>
-            <li>BEAUTY ACCESSORIES <span class="arrow">&gt;</span></li>
-            <li>DEMO</li>
-            <li>PAGES <span class="arrow">&gt;</span></li>
-            <li>TRY THEME <span class="badge sale">Sale</span> <span class="arrow">&gt;</span></li>
-        </ul>
+		<ul class="sidebar-menu">
+			<li>#TREND NOW <span class="badge new">New</span> <span class="arrow">&gt;</span></li>
+			<li>FRAGRANCE <span class="arrow">&gt;</span></li>
+			<li>MAKEUP <span class="badge hot">Hot</span> <span class="arrow">&gt;</span></li>
+			<li>NAIL</li>
+			<li>BEAUTY ACCESSORIES <span class="arrow">&gt;</span></li>
+			<li>DEMO</li>
+			<li>PAGES <span class="arrow">&gt;</span></li>
+			<li>TRY THEME <span class="badge sale">Sale</span> <span class="arrow">&gt;</span></li>
+		</ul>
 
-        <ul class="sidebar-secondary">
-            <li><i class="fas fa-user"></i> Sign In</li>
-            <li><i class="fas fa-heart"></i> Wish Lists</li>
-            <li><i class="fas fa-phone"></i> (1800) 000 BEAUTICA</li>
-            <li><i class="fas fa-gift"></i> Gift Certificates</li>
-            <li><img src="https://flagcdn.com/us.svg" class="flag"> USD <span class="arrow">&gt;</span></li>
-        </ul>
+		<ul class="sidebar-secondary">
+			<li><i class="fas fa-user"></i> Sign In</li>
+			<li><i class="fas fa-heart"></i> Wish Lists</li>
+			<li><i class="fas fa-phone"></i> (1800) 000 BEAUTICA</li>
+			<li><i class="fas fa-gift"></i> Gift Certificates</li>
+			<li><img src="https://flagcdn.com/us.svg" class="flag"> USD <span class="arrow">&gt;</span></li>
+		</ul>
 
-        <div class="social-icons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-x-twitter"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-tiktok"></i>
-        </div>
-    </div>
+		<div class="social-icons">
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-x-twitter"></i>
+			<i class="fab fa-pinterest"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-youtube"></i>
+			<i class="fab fa-tiktok"></i>
+		</div>
+	</div>
 
-    <!-- Navigation -->
-    <div class="menu">
-        <ul class="nav-menu">
-            <li class="menu-dropdowns" id="nav-menu-li">#TREND NOW <span class="badge_top new">New</span>
-                <div class="dropdowns-items mega-menu">
-                    <div class="mega-left">
-                        <img src="./images/image-mega-menu.jpg" alt="Just Arrived">
+	<!-- Navigation -->
+	<div class="menu">
+		<ul class="nav-menu">
+			<li class="menu-dropdowns" id="nav-menu-li">#TREND NOW <span class="badge_top new">New</span>
+				<div class="dropdowns-items mega-menu">
+					<div class="mega-left">
+						<img src="./images/image-mega-menu.jpg" alt="Just Arrived">
 
-                    </div>
-                    <div class="mega-columns">
-                        <div class="mega-col">
-                            <h4>LOREM DE DORUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>COMOS DE MILANO</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>LYNN COSMOPOLIS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>NOR LOREMIRUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Fermentum Loremous</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
+					</div>
+					<div class="mega-columns">
+						<div class="mega-col">
+							<h4>LOREM DE DORUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>COMOS DE MILANO</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>LYNN COSMOPOLIS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>NOR LOREMIRUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Fermentum Loremous</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
 
-                    </div>
-                </div>
-            </li>
-
-
-            <li class="menu-dropdowns" id="nav-menu-li">FRAGRANCE
-                <div class="dropdowns-items mega-menu">
-                    <div class="mega-columns">
-
-                        <!-- Top Row: 5 columns -->
-                        <div class="mega-col">
-                            <h4>COMOS DE MILANO</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-
-                        <div class="mega-col">
-                            <h4>LYNN COSMOPOLIS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-
-                        <div class="mega-col">
-                            <h4>NOR LOREMIRUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Fermentum Loremous</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-
-                        <div class="mega-col">
-                            <h4>SHOP</h4>
-                            <ul>
-                                <li>Editor's Picks</li>
-                                <li>Just Added</li>
-                                <li>Most Populars</li>
-                                <li>Most Rated</li>
-                                <li>Naminos Compolis</li>
-                            </ul>
-                        </div>
-
-                        <!-- Bottom Row: promo banners and brands -->
-                        <div class="grid-bottom" style="grid-column: 1 / -1;">
-                            <div class="promo-banner">
-                                <img src="./images/megamenu-image-5.jpg" alt="Summer Collection">
-                                <img src="./images/megamenu-image-4.jpg" alt="Summer Collection">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="menu-dropdowns" id="nav-menu-li">MAKEUP<span class="badge_top hot">Hot</span>
+					</div>
+				</div>
+			</li>
 
 
-                <div class="makeup-mega-wrapper">
+			<li class="menu-dropdowns" id="nav-menu-li">FRAGRANCE
+				<div class="dropdowns-items mega-menu">
+					<div class="mega-columns">
 
-                    <!-- Left: Category Grid -->
-                    <div class="makeup-mega-columns">
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
+						<!-- Top Row: 5 columns -->
+						<div class="mega-col">
+							<h4>COMOS DE MILANO</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
 
-                    </div>
+						<div class="mega-col">
+							<h4>LYNN COSMOPOLIS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
 
-                    <!-- Right Side: Product + Banner -->
-                    <div class="makeup-deal-container">
-                        <div class="top-seller">
-                            <h5 id="txt">TOP SELLERS</h5>
-                            <div class="product-image-nav">
-                                <span class="arrow">&#10094;</span>
-                                <img src="./images/03__01593.jpg" alt="Top Seller" class="top-seller-img" />
-                                <span class="arrow">&#10095;</span>
-                            </div>
-                            <h5 id="txt">FRENCH CONNECTION</h5>
-                            <p class="desc">(Product 1) Sample - Makeup, Skincare And Perfumes For Sale</p>
-                            <p class="price" id="txt">$49.00</p>
-                            <div class="rating">★★★★★</div>
-                            <button>BUY NOW</button>
-                        </div>
+						<div class="mega-col">
+							<h4>NOR LOREMIRUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Fermentum Loremous</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
 
-                        <div class="banner-makeup">
-                            <img src="./images/modal.jpg" alt="Banner Ad" />
-                        </div>
-                    </div>
-                </div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+
+						<div class="mega-col">
+							<h4>SHOP</h4>
+							<ul>
+								<li>Editor's Picks</li>
+								<li>Just Added</li>
+								<li>Most Populars</li>
+								<li>Most Rated</li>
+								<li>Naminos Compolis</li>
+							</ul>
+						</div>
+
+						<!-- Bottom Row: promo banners and brands -->
+						<div class="grid-bottom" style="grid-column: 1 / -1;">
+							<div class="promo-banner">
+								<img src="./images/megamenu-image-5.jpg" alt="Summer Collection">
+								<img src="./images/megamenu-image-4.jpg" alt="Summer Collection">
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="menu-dropdowns" id="nav-menu-li">MAKEUP<span class="badge_top hot">Hot</span>
 
 
+				<div class="makeup-mega-wrapper">
 
+					<!-- Left: Category Grid -->
+					<div class="makeup-mega-columns">
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
 
+					</div>
 
-            <li id="nav-menu-li">NAIL</li>
+					<!-- Right Side: Product + Banner -->
+					<div class="makeup-deal-container">
+						<div class="top-seller">
+							<h5 id="txt">TOP SELLERS</h5>
+							<div class="product-image-nav">
+								<span class="arrow">&#10094;</span>
+								<img src="./images/03__01593.jpg" alt="Top Seller" class="top-seller-img" />
+								<span class="arrow">&#10095;</span>
+							</div>
+							<h5 id="txt">FRENCH CONNECTION</h5>
+							<p class="desc">(Product 1) Sample - Makeup, Skincare And Perfumes For Sale</p>
+							<p class="price" id="txt">$49.00</p>
+							<div class="rating">★★★★★</div>
+							<button>BUY NOW</button>
+						</div>
 
-            <li class="menu-dropdowns" id="nav-menu-li">BEAUTY ACCESSORIES
-                <div class="dropdowns-items mega-menu">
-                    <div class="beauty-mega-columns">
-                        <div class="mega-col">
-                            <h4>LOREM DE DORUS</h4>
-                            <ul>
-                                <li>Cosmopolis</li>
-                                <li>Destibulum Mauris</li>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                                <li>Milancelos</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>COMOS DE MILANO</h4>
-                            <ul>
-                                <li>Cosmopolis</li>
-                                <li>Destibulum Mauris</li>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                                <li>Milancelos</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>LYNN COSMOPOLIS</h4>
-                            <ul>
-                                <li>Cosmopolis</li>
-                                <li>Fermentum Loremous</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                                <li>Malesuada Sarcus</li>
-                                <li>Milancelos</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>NOR LOREMIRUS</h4>
-                            <ul>
-                                <li>Cosmopolis</li>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                                <li>Milancelos</li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ACCESSORIUS</h4>
-                            <ul>
-                                <li>Fermentum Loremous</li>
-                                <li>Habitasse Molateas</li>
-                                <li>Maecenas Commodos</li>
-                                <li>Malesuada Sarcus</li>
-                            </ul>
-                        </div>
-                        <div class="shipping">
-                            <p><strong>FREE INTERNATIONAL SHIPPING. NO MINIMUM PURCHASE REQUIRED*</strong></p>
-                        </div>
-                    </div>
-
-
-            </li>
-
-            <li class="menu-dropdowns" id="nav-menu-li">
-                DEMO
-                <div class="dropdowns-items demo-menu">
-                    <ul class="demo-main-menu">
-                        <li class="has-submenu">
-                            Home Page
-                            <ul class="submenu">
-                                <li>Light Layout</li>
-                                <li>Bold Layout</li>
-                                <li>Lingerie Layout</li>
-                            </ul>
-                        </li>
-                        <li><a href="Products.html">Product Page</a></li>
-                        <li>Category Page</li>
-                    </ul>
-                </div>
-            </li>
+						<div class="banner-makeup">
+							<img src="./images/modal.jpg" alt="Banner Ad" />
+						</div>
+					</div>
+				</div>
 
 
 
 
 
-            <li class="menu-dropdowns" id="nav-menu-li">PAGES
-                <div class="dropdowns-items demo-menu">
-                    <ul class="demo-main-menu">
-                        <li id="pages_li"><a href="new.html"> About Us</a></li>
-                        <li id="pages_li"><a href="contactus.html">Contact Us</a></li>
-                        <li id="pages_li"><a href="Blog.html">Blog</a></li>
-                        <li id="pages_li"><a href="Blog Details.html">Blog Details</a></li>
-                        <li id="pages_li"><a href="Brands.html">Brands</a></li>
-                        <li id="pages_li"><a href="Store.html">Find A Store</a></li>
-                        <li id="pages_li"><a href="FAQs.html">FAQs</a></li>
-                        <li id="pages_li"><a href="Look.html">Lookbook</a></li>
-                        <li id="pages_li"><a href="shipping.html">Shipping  & Returns</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-dropdowns" id="nav-menu-li">TRY THEME <span class="badge_top sale">Sale</span>
-                <div class="dropdowns-items demo-menu">
-                    <ul class="demo-main-menu">
-                        <li id="pages_li">Documentation</li>
-                        <li id="pages_li">Get Support</li>
-                        <li id="pages_li">Open A Store For Free</li>
+			<li id="nav-menu-li">NAIL</li>
 
-                    </ul>
-                </div>
+			<li class="menu-dropdowns" id="nav-menu-li">BEAUTY ACCESSORIES
+				<div class="dropdowns-items mega-menu">
+					<div class="beauty-mega-columns">
+						<div class="mega-col">
+							<h4>LOREM DE DORUS</h4>
+							<ul>
+								<li>Cosmopolis</li>
+								<li>Destibulum Mauris</li>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+								<li>Milancelos</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>COMOS DE MILANO</h4>
+							<ul>
+								<li>Cosmopolis</li>
+								<li>Destibulum Mauris</li>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+								<li>Milancelos</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>LYNN COSMOPOLIS</h4>
+							<ul>
+								<li>Cosmopolis</li>
+								<li>Fermentum Loremous</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+								<li>Malesuada Sarcus</li>
+								<li>Milancelos</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>NOR LOREMIRUS</h4>
+							<ul>
+								<li>Cosmopolis</li>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+								<li>Milancelos</li>
+							</ul>
+						</div>
+						<div class="mega-col">
+							<h4>ACCESSORIUS</h4>
+							<ul>
+								<li>Fermentum Loremous</li>
+								<li>Habitasse Molateas</li>
+								<li>Maecenas Commodos</li>
+								<li>Malesuada Sarcus</li>
+							</ul>
+						</div>
+						<div class="shipping">
+							<p><strong>FREE INTERNATIONAL SHIPPING. NO MINIMUM PURCHASE REQUIRED*</strong></p>
+						</div>
+					</div>
 
 
-            </li>
-        </ul>
-    </div>
+			</li>
 
-    <div class="limited">
-        <strong>Limited-Time Offers: Mid-Season Sale Up to 70% OFF On Selected Items.
-            <a href="#" style="color: #fff; text-decoration: underline;">Shop Now</a></strong>
-    </div>
+			<li class="menu-dropdowns" id="nav-menu-li">
+				DEMO
+				<div class="dropdowns-items demo-menu">
+					<ul class="demo-main-menu">
+						<li class="has-submenu">
+							Home Page
+							<ul class="submenu">
+								<li>Light Layout</li>
+								<li>Bold Layout</li>
+								<li>Lingerie Layout</li>
+							</ul>
+						</li>
+						<li><a href="Products.html">Product Page</a></li>
+						<li>Category Page</li>
+					</ul>
+				</div>
+			</li>
 
 
-    <!--------- -------------->
 
 
-  
+
+			<li class="menu-dropdowns" id="nav-menu-li">PAGES
+				<div class="dropdowns-items demo-menu">
+					<ul class="demo-main-menu">
+						<li id="pages_li"><a href="new.html"> About Us</a></li>
+						<li id="pages_li"><a href="contactus.html">Contact Us</a></li>
+						<li id="pages_li"><a href="Blog.html">Blog</a></li>
+						<li id="pages_li"><a href="Blog Details.html">Blog Details</a></li>
+						<li id="pages_li"><a href="Brands.html">Brands</a></li>
+						<li id="pages_li"><a href="Store.html">Find A Store</a></li>
+						<li id="pages_li"><a href="FAQs.html">FAQs</a></li>
+						<li id="pages_li"><a href="Look.html">Lookbook</a></li>
+						<li id="pages_li"><a href="shipping.html">Shipping & Returns</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu-dropdowns" id="nav-menu-li">TRY THEME <span class="badge_top sale">Sale</span>
+				<div class="dropdowns-items demo-menu">
+					<ul class="demo-main-menu">
+						<li id="pages_li">Documentation</li>
+						<li id="pages_li">Get Support</li>
+						<li id="pages_li">Open A Store For Free</li>
+
+					</ul>
+				</div>
+
+
+			</li>
+		</ul>
+	</div>
+
+	<div class="limited">
+		<strong>Limited-Time Offers: Mid-Season Sale Up to 70% OFF On Selected Items.
+			<a href="#" style="color: #fff; text-decoration: underline;">Shop Now</a></strong>
+	</div>
+
+
+	<!--------- -------------->
 
 
 
@@ -454,8 +452,11 @@
 
 
 
- 
-	
+
+
+
+
+
 	<!-- Banner Section -->
 	<div class="banner">
 		<div class="banner-slide active" style="background-image: url('./images/banner.png');">
@@ -520,83 +521,16 @@
 
 	<!-- Product Cards -->
 
-	<div class="product-container">
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product1.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product6.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
+	<div class="carousel-wrapper">
+		<button class="arrow left">&#10094;</button>
+
+		<div class="product-container" id="product-container">
+			<!-- Product cards from index.js -->
 		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product2.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product7.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product3.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product1.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product4.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product5.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
-		<div class="products">
-			<div class="product-img">
-				<img class="product-img-front" src="./images/products/product7.png" alt="Front View" />
-				<img class="product-img-back" src="./images/products/product6.png" alt="Back View" />
-				<span class="badge">New</span>
-				<button class="quick-view">QUICK VIEW</button>
-				<span class="wishlist">&#10084;</span>
-			</div>
-			<div class="product-info">
-				<h3 class="brand">TOMMORROW</h3>
-				<p class="description">Product (X) Sample - Makeup, Skincare...</p>
-				<div class="price">$76.00</div>
-				<button class="add-to-cart">ADD TO CART</button>
-			</div>
-		</div>
+
+		<button class="arrow right">&#10095;</button>
 	</div>
+
 
 	<!-- 2nd Product Cards -->
 
@@ -630,17 +564,12 @@
 
 	<hr class="new1">
 
-	<!-- Featured Products-->
-	<div class="arrived">
 
-		<h2>Featured Products</h2>
-		<p>Magnis de darturien eros laciniados de cosmopolis dinterdum</p>
+	
 
-	</div>
+	<!-- Featured Products -->
 
-	<!-- Product Cards -->
-
-	<div class="product-container">
+	<!-- <div class="product-container">
 		<div class="products">
 			<div class="product-img">
 				<img class="product-img-front" src="./images/products/product9.png" alt="Front View" />
@@ -716,7 +645,21 @@
 				<button class="add-to-cart">ADD TO CART</button>
 			</div>
 		</div>
-	</div>
+	</div> -->
+<section class="featured-section">
+  <h2 class="featured-title">FEATURED PRODUCTS</h2>
+  <p class="featured-subtitle">
+    Magnis de darturien eros lacinia sed de cosmopolis dinterdum
+  </p>
+
+  <div class="featured-carousel-wrapper">
+    <button class="featured-arrow featured-left">&#10094;</button>
+    <div class="featured-product-container" id="featuredProductContainer"></div>
+    <button class="featured-arrow featured-right">&#10095;</button>
+  </div>
+</section>
+
+	
 
 	<hr class="new1">
 
@@ -896,18 +839,19 @@
 
 	</div>
 
-
+	<script src="featureProducts.js"></script>
 	<script src="script.js"></script>
-	    <script>
-     // Main Sidebar open/close
-        function openSidebar() {
-            document.getElementById('sidebar').classList.add('active');
-        }
+	<script src="index.js"></script>
+	<script>
+		// Main Sidebar open/close
+		function openSidebar() {
+			document.getElementById('sidebar').classList.add('active');
+		}
 
-        function closeSidebarFunction() {
-            document.getElementById('sidebar').classList.remove('active');
-        }
-    </script>
+		function closeSidebarFunction() {
+			document.getElementById('sidebar').classList.remove('active');
+		}
+	</script>
 </body>
 
 </Html>

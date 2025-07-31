@@ -115,3 +115,12 @@ followPrev.addEventListener("click", () => {
 
   followImgs.style.transform = `translateX(${followPosition}px)`;
 });
+
+
+
+
+// LOGOS CAROUSEL
+
+
+
+
